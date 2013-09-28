@@ -66,7 +66,6 @@ define(function(require) {
             return this.nodeType === 3;
           });
         };
-        console.log($(getTextNodesIn('body')).size() + " text nodes");
         lazy_watch_queue = {};
         _.each(get_this.lazytex2jax, function(delimiter_pack, delimiter_pack_name) {
           return _.each(delimiter_pack, function(delimiter, index) {

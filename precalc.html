@@ -1,0 +1,1247 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Alberto Leal">
+  <title>Precalculus</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="style_2.css">
+</head>
+<body>
+<header>
+<h1 class="title">Precalculus</h1>
+<h2 class="author">Alberto Leal</h2>
+</header>
+<nav id="TOC">
+<ul>
+<li><a href="#meta">Meta</a><ul>
+<li><a href="#document">Document</a></li>
+<li><a href="#resources">Resources</a></li>
+</ul></li>
+<li><a href="#algebra">Algebra</a><ul>
+<li><a href="#arithmetic-operations">Arithmetic operations</a><ul>
+<li><a href="#addition">Addition</a></li>
+<li><a href="#subtraction">Subtraction</a></li>
+<li><a href="#multiplication">Multiplication</a></li>
+<li><a href="#division">Division</a></li>
+</ul></li>
+<li><a href="#decimals">Decimals</a><ul>
+<li><a href="#binary">Binary</a></li>
+</ul></li>
+<li><a href="#casting-out-nines">Casting out nines</a></li>
+<li><a href="#fractions">Fractions</a><ul>
+<li><a href="#operations">Operations</a></li>
+</ul></li>
+<li><a href="#least-common-multiple">Least common multiple</a></li>
+<li><a href="#least-common-denominator">Least common denominator</a></li>
+<li><a href="#finding-least-common-multiples-by-prime-factorization">Finding least common multiples by prime factorization</a></li>
+<li><a href="#greatest-common-factor">Greatest common factor</a></li>
+<li><a href="#proportionality">Proportionality</a><ul>
+<li><a href="#direct-proportionality">Direct proportionality</a></li>
+<li><a href="#inverse-proportionality">Inverse proportionality</a></li>
+</ul></li>
+<li><a href="#powers-roots-and-laws-of-indices">Powers, roots and laws of indices</a><ul>
+<li><a href="#exponentiation">Exponentiation</a></li>
+<li><a href="#nth-root">nth root</a></li>
+</ul></li>
+<li><a href="#inequalities">Inequalities</a><ul>
+<li><a href="#properties">Properties</a></li>
+</ul></li>
+<li><a href="#absolute-value">Absolute value</a><ul>
+<li><a href="#proofs">Proofs</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#functions">Functions</a><ul>
+<li><a href="#definition">Definition</a><ul>
+<li><a href="#image">Image</a></li>
+</ul></li>
+<li><a href="#injective-and-surjective-functions">Injective and surjective functions</a></li>
+</ul></li>
+<li><a href="#the-cartesian-coordinate-plane">The Cartesian Coordinate Plane</a><ul>
+<li><a href="#symmetry">Symmetry</a></li>
+<li><a href="#reflections">Reflections</a></li>
+<li><a href="#distance-formula">Distance Formula</a></li>
+<li><a href="#midpoint-formula">Midpoint Formula</a></li>
+</ul></li>
+<li><a href="#linear-equation">Linear Equation</a><ul>
+<li><a href="#slopeintercept-form">Slope–intercept form</a></li>
+<li><a href="#pointslope-form">Point–slope form</a></li>
+<li><a href="#two-point-form">Two-point form</a></li>
+<li><a href="#intercept-form">Intercept form</a></li>
+<li><a href="#properties-of-slopes">Properties of slopes</a></li>
+</ul></li>
+<li><a href="#quadratics">Quadratics</a><ul>
+<li><a href="#polynomials-factorable-over-the-rationals">Polynomials factorable over the rationals</a></li>
+<li><a href="#completing-the-square">Completing the square</a></li>
+<li><a href="#quadratic-formula">Quadratic formula</a><ul>
+<li><a href="#discriminant">Discriminant</a></li>
+<li><a href="#derivation-of-the-quadratic-formula">Derivation of the quadratic formula</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#factorisation-of-polynominals">Factorisation of polynominals</a><ul>
+<li><a href="#quadratics-1">Quadratics</a><ul>
+<li><a href="#perfect-square-trinomials">Perfect square trinomials</a></li>
+<li><a href="#sumdifference-of-two-squares">Sum/difference of two squares</a></li>
+</ul></li>
+<li><a href="#factoring-other-polynomials">Factoring other polynomials</a><ul>
+<li><a href="#sumdifference-of-two-cubes">Sum/difference of two cubes</a></li>
+<li><a href="#difference-of-two-fourth-powers">Difference of two fourth powers</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#polynomial-long-division">Polynomial long division</a><ul>
+<li><a href="#polynomial-remainder-theorem">Polynomial remainder theorem</a><ul>
+<li><a href="#factor-theorem">Factor theorem</a></li>
+</ul></li>
+<li><a href="#synthetic-division">Synthetic division</a><ul>
+<li><a href="#regular-synthetic-division">Regular synthetic division</a></li>
+<li><a href="#expanded-synthetic-division">Expanded synthetic division</a></li>
+<li><a href="#compact-expanded-synthetic-division">Compact Expanded Synthetic Division</a></li>
+</ul></li>
+<li><a href="#rational-root-theorem">Rational root theorem</a></li>
+</ul></li>
+<li><a href="#finding-roots-of-polynomials">Finding roots of polynomials</a><ul>
+<li><a href="#ruffinis-rule">Ruffini’s rule</a></li>
+</ul></li>
+<li><a href="#factorial">Factorial</a></li>
+<li><a href="#combination">Combination</a></li>
+<li><a href="#permutation">Permutation</a></li>
+<li><a href="#binomial-theorem">Binomial theorem</a><ul>
+<li><a href="#statement-of-the-theorem">Statement of the theorem</a></li>
+</ul></li>
+<li><a href="#exponential-function">Exponential function</a><ul>
+<li><a href="#properties-1">Properties</a></li>
+</ul></li>
+<li><a href="#logarithmic-function">Logarithmic function</a><ul>
+<li><a href="#properties-2">Properties</a></li>
+<li><a href="#logarithmic-identities">Logarithmic identities</a><ul>
+<li><a href="#product">Product</a></li>
+<li><a href="#quotient">Quotient</a></li>
+<li><a href="#power">Power</a></li>
+<li><a href="#root">Root</a></li>
+<li><a href="#change-of-base">Change of base</a></li>
+<li><a href="#switch">Switch</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#functions-1">Functions</a><ul>
+<li><a href="#inverse">Inverse</a></li>
+<li><a href="#piecewise">Piecewise</a></li>
+</ul></li>
+<li><a href="#conic-sections">Conic Sections</a></li>
+<li><a href="#systems-of-equations">Systems of equations</a></li>
+<li><a href="#partial-fraction">Partial fraction</a></li>
+<li><a href="#sequences">Sequences</a><ul>
+<li><a href="#definition-and-properties">Definition and properties</a></li>
+<li><a href="#recursive-sequences">Recursive sequences</a></li>
+<li><a href="#arithmetic">Arithmetic</a></li>
+<li><a href="#geoemtric">Geoemtric</a></li>
+</ul></li>
+<li><a href="#series">Series</a></li>
+</ul>
+</nav>
+<p><a href="#" class="go-top">Go Top</a></p>
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">title: Precalculus</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">author: Alberto Leal</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">description: foundational mathematical discipline, in other words, nooby stuff</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">date: 2012-10-01 15:00</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">template: note.jade</td>
+</tr>
+</tbody>
+</table>
+<h1 id="meta"><a href="#meta">Meta</a></h1>
+<p>Compiled with:</p>
+<pre><code>pandoc precalc.md -s -S -c style.css --toc --mathjax -o index.html</code></pre>
+<p><strong>Note:</strong> Has been transferred to wintersmith. This section has been kept for historical purposes.</p>
+<h2 id="document"><a href="#document">Document</a></h2>
+<p>This is a living document:</p>
+<blockquote>
+<p>A living document or dynamic document is a document that is continually edited and updated.</p>
+</blockquote>
+<p>However, this is document is only alive to the author. For others, it is dead on arrival.</p>
+<p>The content within this document is only meant to be referential to the author that composed it. As such, to other readers, assumed knowledge may be needed to read and understand the content within this document.</p>
+<h2 id="resources"><a href="#resources">Resources</a></h2>
+<p><strong>TO DO:</strong> This should be cleaned up!</p>
+<p>Most of the content found on this page is procured from the following resource:</p>
+<ul>
+<li><p><a href="http://stitz-zeager.com/Precalculus/Stitz_Zeager_Open_Source_Precalculus.html">Precalculus</a></p></li>
+<li><a href="http://www.people.vcu.edu/~rhammack/BookOfProof/">Book of Proof</a></li>
+<li>Stewart Calculus (preliminary material)</li>
+<li>John Bird’s textbooks:</li>
+<li>Higher Engineering Mathematics by John Bird (6th Edition)</li>
+<li>Engineering Mathematics by John Bird (5th Edition)</li>
+<li>Basic Engineering Mathematics by John Bird (5th Edition)</li>
+<li>Elementary Euclidean Geometry: An Undergraduate Introduction</li>
+<li>Wikipedia (most content blatantly plagiarized)
+<ul>
+<li>Selected articles from <a href="http://en.wikipedia.org/wiki/Category:Elementary_algebra">Wikipedia’s Elementary Algebra</a></li>
+</ul></li>
+<li><a href="http://patrickjmt.com/">patrickjmt</a></li>
+<li><a href="http://www.purplemath.com/modules/index.htm">Purplemath</a></li>
+<li><a href="http://www.math.ucdavis.edu/~marx/precalculus.html">precalculus problems website</a></li>
+<li><p><a href="http://www.mathsisfun.com/">mathsisfun</a></p></li>
+</ul>
+<h1 id="algebra"><a href="#algebra">Algebra</a></h1>
+<h2 id="arithmetic-operations"><a href="#arithmetic-operations">Arithmetic operations</a></h2>
+<p><strong>Commutative law</strong></p>
+<ul>
+<li><span class="math">\(a+b = b+a\)</span></li>
+<li><span class="math">\(ab = ba\)</span></li>
+</ul>
+<p><strong>Associative law</strong></p>
+<ul>
+<li><span class="math">\((a+b) + c = a + (b+c)\)</span></li>
+<li><span class="math">\((ab)c = a(bc)\)</span></li>
+</ul>
+<p><strong>Distributive law</strong></p>
+<ul>
+<li><span class="math">\(a(b+c) = ab + ac\)</span></li>
+</ul>
+<h3 id="addition"><a href="#addition">Addition</a></h3>
+<p><strong>additive inverse</strong></p>
+<p>The additive inverse, or opposite, of a number <span class="math">\(a\)</span> is the number that, when added to <span class="math">\(a\)</span>, yields zero.</p>
+<h3 id="subtraction"><a href="#subtraction">Subtraction</a></h3>
+<p><span class="math">\(a - b = c\)</span></p>
+<ul>
+<li><span class="math">\(a\)</span> is called the minuend</li>
+<li><span class="math">\(b\)</span> is called the subtrahend</li>
+<li><span class="math">\(c\)</span> is called the difference</li>
+</ul>
+<h3 id="multiplication"><a href="#multiplication">Multiplication</a></h3>
+<p><strong>multiplicative inverse</strong></p>
+<p>Multiplicative inverse or reciprocal for a number <span class="math">\(x\)</span>, denoted by <span class="math">\(\dfrac{1}{x}\)</span> or <span class="math">\(x^{−1}\)</span>, is a number which when multiplied by <span class="math">\(x\)</span> yields the multiplicative identity, <span class="math">\(1\)</span>.</p>
+<h3 id="division"><a href="#division">Division</a></h3>
+<p><span class="math">\(a \div b = c\)</span></p>
+<ul>
+<li><span class="math">\(a\)</span> is called the dividend or numerator</li>
+<li><span class="math">\(b\)</span> is called the divisor or denominator</li>
+<li><span class="math">\(c\)</span> is called the quotient</li>
+<li><span class="math">\(\div\)</span> is called the obelus (plural: obeli)</li>
+</ul>
+<h2 id="decimals"><a href="#decimals">Decimals</a></h2>
+<p><strong>repeating decminal</strong>:</p>
+<p>A repeating decimal, also called a recurring decimal, is a number whose decimal representation eventually becomes periodic (i.e., the same sequence of digits repeats indefinitely). The repeating portion of a decimal expansion is conventionally denoted with a <strong>vinculum</strong> so, for example:</p>
+<p><span class="math">\(\dfrac{1}{3} = 0.3333\ldots = 0.\overline{3}\)</span></p>
+<p><strong>terminating decimal</strong>:</p>
+<p>A decimal that is not a repeating decimal, and terminates.</p>
+<ol type="1">
+<li>Every rational number is either a terminating or repeating decimal</li>
+<li>Every repeating or terminating decimal is a rational number</li>
+</ol>
+<h4 id="conversion-terminating-decimal-to-fractions"><a href="#conversion-terminating-decimal-to-fractions">Conversion (terminating decimal) to fractions</a></h4>
+<ol type="1">
+<li><p>Write down the decimal divided by 1, like this: <span class="math">\(\dfrac{\text{decimal}}{1}\)</span></p></li>
+<li><p>Multiply both top and bottom by 10 for every number after the decimal point.</p></li>
+<li><p>Simplify (or reduce) the fraction</p></li>
+</ol>
+<h4 id="converting-a-repeating-decimal-to-a-fraction"><a href="#converting-a-repeating-decimal-to-a-fraction">Converting a repeating decimal to a fraction</a></h4>
+<ol type="1">
+<li><p>Let <span class="math">\(x\)</span> equal the repeating decimal you are trying to convert to a fraction</p></li>
+<li><p>Examine the repeating decimal to find the repeating digit(s)</p></li>
+<li><p>Let <span class="math">\(n\)</span> be the number of digit(s) within the repeating digit(s).</p>
+<p>Let <span class="math">\(m\)</span> be the number of non-repeating digits between the decimal point and the beginning of the repeating digit(s).</p>
+<p>Let <span class="math">\(a = 10^{n+m}x\)</span>.</p></li>
+<li><p>Let <span class="math">\(b = 10^m x\)</span></p></li>
+<li><p>Let <span class="math">\(a - b = 10^{n+m}x - 10^m x = 10^m(10^n-1)x\)</span></p>
+<p>Solve for <span class="math">\(x\)</span>, <span class="math">\(x = \dfrac{a-b}{10^m(10^n-1)}\)</span></p></li>
+</ol>
+<p><a href="http://www.basic-mathematics.com/converting-repeating-decimals-to-fractions.html">Reference</a></p>
+<h4 id="adding-and-subtracting"><a href="#adding-and-subtracting">Adding and subtracting</a></h4>
+<ul>
+<li><p>Write down the numbers, one under the other, with the decimal points lined up</p></li>
+<li><p>Put in zeros so the numbers have the same length</p></li>
+<li><p>Then add/subtract normally, remembering to put the decimal point in the answer</p>
+<pre><code>   1.452
+ + 1.300
+   -----
+   2.752 </code></pre></li>
+</ul>
+<h4 id="multiplication-1"><a href="#multiplication-1">Multiplication</a></h4>
+<ul>
+<li><p>Multiply normally, ignoring the decimal points.</p></li>
+<li><p>Then put the decimal point in the answer - it will have as many decimal places as the two original numbers combined.</p></li>
+</ul>
+<h4 id="division-1"><a href="#division-1">Division</a></h4>
+<ul>
+<li><p>Use Division or Long Division (ignoring the decimal point)</p></li>
+<li><p>Then put the decimal point in the same spot as the dividend (the number being divided)</p></li>
+</ul>
+<h3 id="binary"><a href="#binary">Binary</a></h3>
+<h4 id="convert-fraction-to-binary"><a href="#convert-fraction-to-binary">Convert fraction to binary</a></h4>
+<ol type="1">
+<li><p>Multiply by two</p></li>
+<li><p>Record if the result is at least 1, and then throw away the integer part.</p></li>
+<li><p>Take the fraction as the starting point for the next step</p></li>
+<li><p>Repeat until you either get to 0 or a periodic number</p></li>
+<li><p>Read the number starting from the top - the first result is the first digit after the comma</p>
+<pre><code>Convert (0.1)_10 to binary
+
+0.1 * 2 = 0.2 -&gt; 0
+0.2 * 2 = 0.4 -&gt; 0
+0.4 * 2 = 0.8 -&gt; 0
+0.8 * 2 = 1.6 -&gt; 1
+0.6 * 2 = 1.2 -&gt; 1
+0.2 * 2 = 0.4 -&gt; 0  (result 0.4 implies periodicity)
+0.4 * 2 = 0.8 -&gt; 0
+0.8 * 2 = 1.6 -&gt; 1
+0.6 * 2 = 1.2 -&gt; 1
+
+Result: 0.00011(0011) periodic.</code></pre>
+<p><a href="http://en.wikipedia.org/wiki/Binary_numeral_system#Decimal">Reference</a> <a href="http://stackoverflow.com/questions/4987176/how-do-you-convert-a-fraction-to-binary">Reference 2</a></p></li>
+</ol>
+<h2 id="casting-out-nines"><a href="#casting-out-nines">Casting out nines</a></h2>
+<pre><code>TODO: http://en.wikipedia.org/wiki/Mental_calculation
+
+TODO: http://voluntaryxchange.typepad.com/voluntaryxchange/2007/04/casting_out_ele.html
+http://www.asiteaboutnothing.net/p_cast9.html</code></pre>
+<p>Casting out nines is a sanity check to ensure that hand computations of sums, differences, products, and quotients of integers are correct.</p>
+<h2 id="fractions"><a href="#fractions">Fractions</a></h2>
+<p>A common fraction (also known as a vulgar fraction or simple fraction) is a rational number written as <span class="math">\(\dfrac{a}{b}\)</span></p>
+<p><strong>Improper fraction</strong></p>
+<ul>
+<li>numerator is greater than or equal to the denominator (<span class="math">\(a \geq b\)</span>)</li>
+<li>absolute value of the fraction greater than or equal to one <span class="math">\(| \frac{a}{b} | \geq 1\)</span></li>
+<li><p><strong>Example</strong></p>
+<p><span class="math">\(\dfrac{2}{3},\dfrac{-3}{4}, \dfrac{4}{9}\)</span></p></li>
+</ul>
+<p><strong>Proper fraction</strong></p>
+<ul>
+<li>numerator is less than the denominator (<span class="math">\(a &lt; b\)</span>)</li>
+<li>absolute value of the fraction strictly less than one <span class="math">\(| \frac{a}{b} | &lt; 1\)</span></li>
+<li><p><strong>Example</strong></p>
+<p><span class="math">\(\dfrac{9}{4},\dfrac{-4}{3}, \dfrac{8}{3}\)</span></p></li>
+</ul>
+<p><strong>Mixed number</strong></p>
+<ul>
+<li>a combination of a whole number and a fraction</li>
+<li><p><strong>Example</strong></p>
+<p><span class="math">\(2 \dfrac{5}{6}\)</span></p></li>
+</ul>
+<h3 id="operations"><a href="#operations">Operations</a></h3>
+<ol type="1">
+<li><p><span class="math">\(\dfrac{a+c}{b} = \dfrac{a}{b} + \dfrac{c}{b}\)</span></p></li>
+<li><p><span class="math">\(\dfrac{a}{b} + \dfrac{c}{d} = \dfrac{ad+cb}{bd}\)</span></p></li>
+<li><p><span class="math">\(\dfrac{a}{b} \cdot \dfrac{c}{d} = \dfrac{ac}{bd}\)</span></p></li>
+<li><p><span class="math">\(\dfrac{-a}{b} = -\dfrac{a}{b} = \dfrac{a}{-b}\)</span></p></li>
+<li><p><span class="math">\(\dfrac{\frac{a}{b}}{\frac{c}{d}} = \dfrac{a}{b} \cdot \dfrac{d}{c} = \dfrac{ad}{bc}\)</span></p></li>
+</ol>
+<h2 id="least-common-multiple"><a href="#least-common-multiple">Least common multiple</a></h2>
+<p><strong>Note:</strong> A multiple is the product of any quantity and an integer.</p>
+<p>The least common multiple of two integers <span class="math">\(a\)</span> and <span class="math">\(b\)</span>, usually denoted by <span class="math">\(\text{LCM}(a, b)\)</span>, is the smallest positive integer that is divisible by both <span class="math">\(a\)</span> and <span class="math">\(b\)</span>. By extension, the LCM of more than two integers is also well-defined: it is the smallest integer that is divisible by each of them.</p>
+<p>If either <span class="math">\(a\)</span> or <span class="math">\(b\)</span> is <span class="math">\(0\)</span>, <span class="math">\(\text{LCM}(a, b)\)</span> is defined to be zero.</p>
+<p>The LCM can be obtained by finding the lowest factors of each of the numbers, and then selecting the largest group of any of the factors present.</p>
+<h2 id="least-common-denominator"><a href="#least-common-denominator">Least common denominator</a></h2>
+<p>The lowest common denominator or least common denominator (abbreviated LCD) is the least common multiple of the denominators of a set of vulgar (common) fractions.</p>
+<p>Finding the LCD:</p>
+<ul>
+<li>List multiples of the largest denominator.</li>
+<li>Find the smallest multiple of the largest denominator that would be divisible by the other denominators.</li>
+</ul>
+<h2 id="finding-least-common-multiples-by-prime-factorization"><a href="#finding-least-common-multiples-by-prime-factorization">Finding least common multiples by prime factorization</a></h2>
+<p>The unique factorization theorem says that every positive integer greater than 1 can be written in only one way as a product of prime numbers. The prime numbers can be considered as the atomic elements which, when combined together, make up a composite number.</p>
+<p><strong>Note:</strong> A composite number is a positive integer that has at least one positive divisor other than one or itself. In other words a composite number is any positive integer greater than one that is not a prime number.</p>
+<h2 id="greatest-common-factor"><a href="#greatest-common-factor">Greatest common factor</a></h2>
+<p>The greatest common factor (GCF), of two or more non-zero integers, is the largest positive integer that divides the numbers without a remainder.</p>
+<p>The simplest way of determining an GCF is to express each number in terms of its lowest factors. This is achieved by repeatedly dividing by the prime numbers <span class="math">\(2, 3, 5, 7, 11, 13, \ldots\)</span>.</p>
+<h2 id="proportionality"><a href="#proportionality">Proportionality</a></h2>
+<p>Two variables are proportional if a change in one is always accompanied by a change in the other, and if the changes are always related by use of a constant. The constant is called the coefficient of proportionality or proportionality constant. Alternatively, we can say that one of the variables is proportional to the other.</p>
+<ul>
+<li><p>If one variable is always the product of the other and a constant, the two are said to be directly proportional. x and y are <strong>directly proportional</strong> if the ratio <span class="math">\(\dfrac{y}{x}\)</span> is constant.</p></li>
+<li><p>If the product of the two variables is always equal to a constant, the two are said to be inversely proportional. x and y are <strong>inversely proportional</strong> if the product <span class="math">\(xy\)</span> is constant.</p></li>
+</ul>
+<h3 id="direct-proportionality"><a href="#direct-proportionality">Direct proportionality</a></h3>
+<p>Given two variables x and y, y is directly proportional to x (x and y <strong>vary directly</strong>, or x and y are in <strong>direct variation</strong>) if there is a non-zero constant k such that <span class="math">\(y = kx.\,\)</span></p>
+<p>The relation is often denoted, using the <span class="math">\(\propto\)</span> symbol, as <span class="math">\(y \propto x\)</span>, and the constant ratio <span class="math">\(k =  \frac{y}{x}\,\)</span> is called the “proportionality constant” or “constant of proportionality”.</p>
+<p>It follows that if <span class="math">\(y\)</span> is directly proportional to <span class="math">\(x\)</span>, with (nonzero) proportionality constant <span class="math">\(k\)</span>, then <span class="math">\(x\)</span> is also directly proportional to <span class="math">\(y\)</span> with proportionality constant <span class="math">\(\frac{1}{k}\)</span>.</p>
+<h3 id="inverse-proportionality"><a href="#inverse-proportionality">Inverse proportionality</a></h3>
+<p>Two variables are inversely proportional (or varying inversely, or in inverse variation, or in inverse proportion or in reciprocal proportion) if one of the variables is directly proportional with the multiplicative inverse (reciprocal) of the other, or equivalently if their product is a constant. It follows that the variable y is inversely proportional to the variable <span class="math">\(x\)</span> if there exists a non-zero constant k such that</p>
+<p><span class="math">\[y = \dfrac{k}{x}\]</span></p>
+<p>The constant can be found by multiplying the original <span class="math">\(x\)</span> variable and the original <span class="math">\(y\)</span> variable: <span class="math">\(k = xy\)</span></p>
+<h2 id="powers-roots-and-laws-of-indices"><a href="#powers-roots-and-laws-of-indices">Powers, roots and laws of indices</a></h2>
+<h3 id="exponentiation"><a href="#exponentiation">Exponentiation</a></h3>
+<p>Exponentiation is a mathematical operation, written as <span class="math">\(b^n\)</span>, involving two numbers, the base <span class="math">\(b\)</span> and the exponent (or <em>index</em> or <em>power</em>) <span class="math">\(n\)</span>.</p>
+<h4 id="law-of-indices"><a href="#law-of-indices">Law of indices</a></h4>
+<p><strong>Integer exponents</strong></p>
+<p>The following identities hold, provided that the base is non-zero whenever the <strong>integer</strong> exponent is not positive:</p>
+<ol type="1">
+<li><p><span class="math">\(x^m \cdot x^n = x^{m+n}\)</span></p></li>
+<li><p><span class="math">\(\dfrac{x^m}{x^n} = x^{m-n} = \sqrt[n]{x^m} = (\sqrt[n]{x})^m\)</span></p></li>
+<li><p><span class="math">\((x^m)^n = x^{mn}\)</span></p></li>
+<li><p><span class="math">\((x \cdot y)^m = x^m y^m\)</span></p></li>
+<li><p><span class="math">\(\left( \dfrac{x}{y} \right)^n = \dfrac{x^n}{y^n}\)</span></p></li>
+<li><p><span class="math">\(x^{-n} = \dfrac{1}{x^n}\)</span></p></li>
+<li><p><span class="math">\(\left( \dfrac{x}{y} \right)^{-n} = \left( \dfrac{y}{x} \right)^n\)</span></p></li>
+<li><p><span class="math">\(x^1 = x\)</span></p></li>
+<li><p><span class="math">\(x^0 = 1\)</span> where <span class="math">\(x \neq 0\)</span></p>
+<ul>
+<li>The definition <span class="math">\(0^0 = 1\)</span> is sometimes used to simplify formulas, but it should be kept in mind that this equality is a definition and not a fundamental mathematical truth.</li>
+</ul></li>
+</ol>
+<p><strong>Real exponents</strong></p>
+<p>The identities and properties shown above for integer exponents are true for <strong>positive real numbers</strong> with <strong>non-integer</strong> exponents as well. However the identity <span class="math">\((x^m)^n = x^{mn}\)</span> cannot be extended consistently to where <span class="math">\(x\)</span> is a negative real number.</p>
+<p>Exponentiation is not commutative: <span class="math">\(2^3 = 8 \neq 3^2 = 9\)</span></p>
+<p>Exponentiation is not associative: <span class="math">\((2^3)^4 \neq 2^{(3^4)}\)</span></p>
+<h3 id="nth-root"><a href="#nth-root">nth root</a></h3>
+<dl>
+<dt><strong>principal root</strong></dt>
+<dd>The positive real root of a positive number, or the negative real root in the case of odd roots of negative numbers.
+</dd>
+</dl>
+<p><span class="math">\(\sqrt[n]{x}\)</span></p>
+<ol type="1">
+<li><span class="math">\(n\)</span> is called the index</li>
+<li><span class="math">\(\sqrt{\,\,}\)</span> is called the radical sign</li>
+<li><span class="math">\(x\)</span> is called the radicand</li>
+</ol>
+<p><strong>Even <span class="math">\(n\)</span>:</strong></p>
+<ol type="1">
+<li>If <span class="math">\(x\)</span> is real and positive: one of its <span class="math">\(n\)</span>th roots is positive, one is negative, and the rest are complex but not real</li>
+<li>If <span class="math">\(x\)</span> is real and negative: none of the nth roots are real (complex)</li>
+</ol>
+<p><strong>Odd <span class="math">\(n\)</span>:</strong></p>
+<ul>
+<li>One <span class="math">\(n\)</span>th root is real and has the same sign as the number, while the other roots are not real (complex).</li>
+</ul>
+<h4 id="square-roots"><a href="#square-roots">Square roots</a></h4>
+<p>The square root of a number <span class="math">\(x\)</span> is that number <span class="math">\(r\)</span> which, when squared, becomes <span class="math">\(x\)</span>:</p>
+<p><span class="math">\(r^2 = x\)</span></p>
+<ul>
+<li>Every positive real number has two square roots, one positive and one negative.</li>
+<li>The positive square root is also known as the principal square root.</li>
+<li>Negative numbers do not have real square roots. However, every negative number has two imaginary square roots.</li>
+</ul>
+<p><strong>Properties</strong></p>
+<ul>
+<li><p><span class="math">\(\sqrt{ab} = \sqrt{a} \cdot \sqrt{b}\)</span>, where <span class="math">\(a,b \geq 0\)</span></p></li>
+<li><p><span class="math">\(\sqrt{\dfrac{a}b{}} = \dfrac{\sqrt{a}}{ \sqrt{b}}\)</span>, where <span class="math">\(a, b \geq 0\)</span></p></li>
+</ul>
+<p><strong>Subadditivity</strong></p>
+<p>Having the non-negative real numbers as domain and codomain:</p>
+<p><span class="math">\(\forall x, y \geq 0\)</span></p>
+<p><span class="math">\(\sqrt{x+y} \leq \sqrt{x} + \sqrt{y}\)</span></p>
+<h4 id="cube-roots"><a href="#cube-roots">Cube roots</a></h4>
+<p>A cube root of a number <span class="math">\(x\)</span> is a number <span class="math">\(r\)</span> whose cube is <span class="math">\(x\)</span>:</p>
+<p><span class="math">\(r^3 = x\)</span></p>
+<ul>
+<li>Every real number x has exactly one real cube root.</li>
+<li>Every real number has two additional complex cube roots.</li>
+</ul>
+<h2 id="inequalities"><a href="#inequalities">Inequalities</a></h2>
+<p>An inequality is a relation that holds between two values when they are different.</p>
+<p><strong>strict inequalities</strong></p>
+<ul>
+<li><p>The notation <span class="math">\(a &lt; b\)</span> means that <span class="math">\(a\)</span> is less than <span class="math">\(b\)</span>.</p></li>
+<li><p>The notation <span class="math">\(a &gt; b\)</span> means that <span class="math">\(a\)</span> is greater than <span class="math">\(b\)</span>.</p></li>
+</ul>
+<p>In contrast to strict inequalities, there are two types of inequality relations that are <strong>not strict</strong>:</p>
+<ul>
+<li><p>The notation <span class="math">\(a \leq b\)</span> means that <span class="math">\(a\)</span> is less than or equal to <span class="math">\(b\)</span> (or, equivalently, not greater than <span class="math">\(b\)</span>, or at most <span class="math">\(b\)</span>).</p></li>
+<li><p>The notation <span class="math">\(a \geq b\)</span> means that <span class="math">\(a\)</span> is greater than or equal to <span class="math">\(b\)</span> (or, equivalently, not less than <span class="math">\(b\)</span>, or at least <span class="math">\(b\)</span>).</p></li>
+</ul>
+<p>An additional use of the notation is to show that one quantity is much greater than another, normally by several orders of magnitude:</p>
+<ul>
+<li><p>The notation <span class="math">\(a \ll b\)</span> means that <span class="math">\(a\)</span> is much less than <span class="math">\(b\)</span>.</p></li>
+<li><p>The notation <span class="math">\(a \gg b\)</span> means that <span class="math">\(a\)</span> is much greater than <span class="math">\(b\)</span>.</p></li>
+</ul>
+<h3 id="properties"><a href="#properties">Properties</a></h3>
+<p>Inequalities are governed by the following properties. All of these properties also hold if all of the non-strict inequalities (<span class="math">\(\leq\)</span> and <span class="math">\(\geq\)</span>) are replaced by their corresponding strict equalities (<span class="math">\(&lt;\)</span> and <span class="math">\(&gt;\)</span>) and (in the case of applying a function) monotonic functions are limited to strictly monotonic functions.</p>
+<p><strong>Transitivity</strong></p>
+<p>For any real numbers <span class="math">\(a, b, c\)</span>:</p>
+<ul>
+<li><p>If <span class="math">\(a \geq b\)</span> and <span class="math">\(b \geq c\)</span>, then <span class="math">\(a \geq c\)</span>.</p></li>
+<li><p>If <span class="math">\(a \geq b\)</span> and <span class="math">\(b \leq c\)</span>, then <span class="math">\(a \leq c\)</span>.</p></li>
+</ul>
+<p>If either of the premises is a strict inequality, then the conclusion is a strict inequality:</p>
+<ul>
+<li>E.g. if <span class="math">\(a \geq b\)</span> and <span class="math">\(b &gt; c\)</span>, then <span class="math">\(a &gt; c\)</span></li>
+</ul>
+<p>An equality is of course a special case of a non-strict inequality.</p>
+<ul>
+<li>E.g. if <span class="math">\(a = b\)</span> and <span class="math">\(b &gt; c\)</span>, then <span class="math">\(a &gt; c\)</span></li>
+</ul>
+<p><strong>Converse</strong></p>
+<p>The relations <span class="math">\(\leq\)</span> and <span class="math">\(\geq\)</span> are each other’s converse:</p>
+<ul>
+<li><p>For any real numbers <span class="math">\(a\)</span> and <span class="math">\(b\)</span>:</p>
+<ul>
+<li><p>If <span class="math">\(a \leq b\)</span>, then <span class="math">\(b \geq a\)</span>.</p></li>
+<li><p>If <span class="math">\(a \geq b\)</span>, then <span class="math">\(b \leq a\)</span>.</p></li>
+</ul></li>
+</ul>
+<p><strong>Addition and subtraction</strong></p>
+<p>A common constant <span class="math">\(c\)</span> may be added to or subtracted from both sides of an inequality:</p>
+<ul>
+<li><p>For any real numbers <span class="math">\(a, b, c\)</span>:</p>
+<ul>
+<li><p>If <span class="math">\(a \leq b\)</span>, then <span class="math">\(a + c \leq b + c\)</span> and <span class="math">\(a − c \leq b − c\)</span>.</p></li>
+<li><p>If <span class="math">\(a \geq b\)</span>, then <span class="math">\(a + c \geq b + c\)</span> and <span class="math">\(a − c \geq b − c\)</span>.</p></li>
+</ul></li>
+</ul>
+<p>This implies the following:</p>
+<p>If <span class="math">\(a \leq b\)</span> and <span class="math">\(c \leq d\)</span>, then <span class="math">\(a + c \leq b + d\)</span>.</p>
+<p><strong>Multiplication and division</strong></p>
+<ul>
+<li><p>For any real numbers, <span class="math">\(a, b\)</span> and non-zero <span class="math">\(c\)</span>:</p>
+<ul>
+<li><p>If <span class="math">\(c\)</span> is positive, then multiplying or dividing by <span class="math">\(c\)</span> does not change the inequality:</p>
+<ul>
+<li><p>If <span class="math">\(a \geq b\)</span> and <span class="math">\(c &gt; 0\)</span>, then <span class="math">\(ac \geq bc\)</span> and <span class="math">\(a/c \geq b/c\)</span>.</p></li>
+<li><p>If <span class="math">\(a \leq b\)</span> and <span class="math">\(c &gt; 0\)</span>, then <span class="math">\(ac \leq bc\)</span> and <span class="math">\(a/c ≤ b/c\)</span>.</p></li>
+</ul></li>
+<li><p>If <span class="math">\(c\)</span> is negative, then multiplying or dividing by <span class="math">\(c\)</span> inverts the inequality:</p>
+<ul>
+<li><p>If <span class="math">\(a \geq b\)</span> and <span class="math">\(c &lt; 0\)</span>, then <span class="math">\(ac \leq bc\)</span> and <span class="math">\(a/c \leq b/c\)</span>.</p></li>
+<li><p>If <span class="math">\(a \leq b\)</span> and <span class="math">\(c &lt; 0\)</span>, then <span class="math">\(ac \geq bc\)</span> and <span class="math">\(a/c \geq b/c\)</span>.</p></li>
+</ul></li>
+</ul></li>
+</ul>
+<p><strong>Additive inverse</strong></p>
+<p>For any real numbers <span class="math">\(a\)</span> and <span class="math">\(b\)</span>, negation inverts the inequality:</p>
+<ul>
+<li><p>If <span class="math">\(a \leq b\)</span>, then <span class="math">\(−a \geq −b\)</span>.</p></li>
+<li><p>If <span class="math">\(a \geq b\)</span>, then <span class="math">\(−a \leq −b\)</span>.</p></li>
+</ul>
+<p><strong>Multiplicative inverse</strong></p>
+<ul>
+<li><p>For any non-zero real numbers <span class="math">\(a\)</span> and <span class="math">\(b\)</span> that are both positive or both negative:</p>
+<ul>
+<li><p>If <span class="math">\(a \leq b\)</span>, then <span class="math">\(1/a \geq 1/b\)</span>.</p></li>
+<li><p>If <span class="math">\(a \geq b\)</span>, then <span class="math">\(1/a \leq 1/b\)</span>.</p></li>
+</ul></li>
+<li><p>If one of <span class="math">\(a\)</span> and <span class="math">\(b\)</span> is positive and the other is negative, then:</p>
+<ul>
+<li><p>If <span class="math">\(a &lt; b\)</span>, then <span class="math">\(1/a &lt; 1/b\)</span>.</p></li>
+<li><p>If <span class="math">\(a &gt; b\)</span>, then <span class="math">\(1/a &gt; 1/b\)</span>.</p></li>
+</ul></li>
+</ul>
+<p>These can also be written in chained notation as:</p>
+<ul>
+<li><p>For any non-zero real numbers <span class="math">\(a\)</span> and <span class="math">\(b\)</span>:</p>
+<ul>
+<li><p>If <span class="math">\(0 &lt; a \leq b\)</span>, then <span class="math">\(1/a \geq 1/b &gt; 0\)</span>.</p></li>
+<li><p>If <span class="math">\(a \leq b &lt; 0\)</span>, then <span class="math">\(0 &gt; 1/a \geq 1/b\)</span>.</p></li>
+<li><p>If <span class="math">\(0 &gt; a \geq b\)</span>, then <span class="math">\(1/a \leq 1/b &lt; 0\)</span>.</p></li>
+<li><p>If <span class="math">\(a \geq b &gt; 0\)</span>, then <span class="math">\(0 &lt; 1/a \leq 1/b\)</span>.</p></li>
+<li><p>If <span class="math">\(a &lt; 0 &lt; b\)</span>, then <span class="math">\(1/a &lt; 0 &lt; 1/b\)</span>.</p></li>
+<li><p>If <span class="math">\(a &gt; 0 &gt; b\)</span>, then <span class="math">\(1/a &gt; 0 &gt; 1/b\)</span>.</p></li>
+</ul></li>
+</ul>
+<p><strong>Applying a function to both sides</strong></p>
+<p>Any monotonically increasing function may be applied to both sides of an inequality (provided they are in the domain of that function) and it will still hold. Applying a monotonically decreasing function to both sides of an inequality means the opposite inequality now holds. The rules for additive and multiplicative inverses are both examples of applying a monotonically decreasing function.</p>
+<p>If the equality is strict (<span class="math">\(a &lt; b\)</span>, <span class="math">\(a &gt; b\)</span>) and the function is strictly monotonic, then the inequality remains strict. If only one of these conditions is strict, then the resultant inequality is non-strict. The rules for additive and multiplicative inverses are both examples of applying a strictly monotonically decreasing function.</p>
+<p>As an example, consider the application of the natural logarithm to both sides of an inequality:</p>
+<p><span class="math">\(0 &lt; a \leq b \Leftrightarrow \ln(a) \leq \ln(b).\)</span></p>
+<p><span class="math">\(0 &lt; a &lt; b \Leftrightarrow \ln(a) &lt; \ln(b).\)</span></p>
+<p>This is true because the natural logarithm is a strictly increasing function.</p>
+<h2 id="absolute-value"><a href="#absolute-value">Absolute value</a></h2>
+<p>For any real number <span class="math">\(a\)</span> the <strong>absolute value</strong> or <strong>modulus</strong> of <span class="math">\(a\)</span>:</p>
+<p><span class="math">\(|a| = \begin{cases} a, &amp; \mbox{if }  a \ge 0  \\ -a,  &amp; \mbox{if } a &lt; 0. \end{cases}\)</span></p>
+<p>The absolute value of <span class="math">\(a\)</span> is always either positive or zero, but never negative.</p>
+<p>From an analytic geometry point of view, the absolute value of a real number is that number’s distance from zero along the real number line, and more generally the absolute value of the difference of two real numbers is the distance between them.</p>
+<p>Since the square-root notation without sign represents the positive square root, it follows that</p>
+<p><span class="math">\(|a| = \sqrt{a^2}\)</span></p>
+<p>The absolute value has the following four fundamental properties:</p>
+<ol type="1">
+<li><p>Non-negativity: <span class="math">\(|a| \geq 0\)</span></p></li>
+<li><p>Positive-definiteness: <span class="math">\(|a| = 0 \iff a = 0\)</span></p></li>
+<li><p>Multiplicativeness: <span class="math">\(|ab| = |a||b|\)</span></p>
+<p>Likewise, <span class="math">\(\left|\dfrac{x}{y}\right| = \dfrac{|x|}{|y|}\)</span>, where <span class="math">\(y \neq 0\)</span></p></li>
+<li><p>Subadditivity: <span class="math">\(|a+b|  \le |a| + |b|\)</span></p></li>
+</ol>
+<p><strong>Other properties</strong></p>
+<p>Other important properties of the absolute value include:</p>
+<ol start="5" type="1">
+<li><p>Idempotence (the absolute value of the absolute value is the absolute value): <span class="math">\(||a|| = |a|\)</span></p></li>
+<li><p>Symmetry: <span class="math">\(|-a| = |a|\)</span></p></li>
+<li><p>Identity of indiscernibles (equivalent to positive-definiteness): <span class="math">\(|a - b| = 0 \iff a = b\)</span></p></li>
+<li><p>Triangle inequality (equivalent to subadditivity): <span class="math">\(|a - b|  \le |a - c| +|c - b|\)</span></p></li>
+<li><p>Preservation of division (equivalent to multiplicativeness): <span class="math">\(|a/b| = |a| / |b| \mbox{ (if } b \ne 0)\)</span></p></li>
+<li><p>Reverse Triangle Inequality: <span class="math">\(|a-b| \ge ||a| - |b||\)</span></p></li>
+<li><p><span class="math">\(|x| = c\)</span> implies that <span class="math">\(x = \pm c\)</span>, where <span class="math">\(c\)</span> is a constant.</p></li>
+<li><p><span class="math">\(|x|^2 = x^2\)</span></p></li>
+<li><p><span class="math">\(\left|x\right| = \left|y \right|\)</span> implies <span class="math">\(x = \pm y\)</span></p></li>
+</ol>
+<p>Two other useful properties concerning inequalities are:</p>
+<ul>
+<li><p><span class="math">\(|a| \le b \iff -b \le a \le b\)</span> (only when <span class="math">\(b \geq 0\)</span>)</p></li>
+<li><p><span class="math">\(|a| \ge b \iff a \le -b \mbox{ or } b \le a\)</span></p></li>
+</ul>
+<figure>
+<img src="images/absolute_value_inequalities.png" alt="Inequalities with absolute values" /><figcaption>Inequalities with absolute values</figcaption>
+</figure>
+<h3 id="proofs"><a href="#proofs">Proofs</a></h3>
+<p><strong>Symmetry</strong></p>
+<p>Proving <span class="math">\(|-x| = |x|\)</span></p>
+<ul>
+<li><p>When <span class="math">\(x = 0\)</span>, <span class="math">\(|-x| = |-0| = |0| = |x|\)</span>.</p></li>
+<li><p>When <span class="math">\(x &gt; 0\)</span>, <span class="math">\(-x &lt; 0\)</span>, and <span class="math">\(|-x| = -(-x) = x = |x|\)</span>.</p></li>
+<li><p>When <span class="math">\(x &lt; 0\)</span>, <span class="math">\(-x &gt; 0\)</span>, and <span class="math">\(|-x| = -x = |x|\)</span></p></li>
+</ul>
+<p><strong>Equality with a constant</strong></p>
+<p>Assume <span class="math">\(|x| = c\)</span>.</p>
+<p>If <span class="math">\(x \geq 0\)</span>, <span class="math">\(x = |x| = c\)</span>.</p>
+<p>If <span class="math">\(x &lt; 0\)</span>, <span class="math">\(-x = |x| = c\)</span>, then <span class="math">\(x = -(-x) = -c\)</span>.</p>
+<p><strong>Square</strong></p>
+<p>Proving <span class="math">\(|x|^2 = x^2\)</span>.</p>
+<p>If <span class="math">\(x \geq 0\)</span>, <span class="math">\(|x| = x\)</span> and <span class="math">\(|x|^2 = x^2\)</span>.</p>
+<p>If <span class="math">\(x \leq 0\)</span>, <span class="math">\(|x| = -x\)</span>, and <span class="math">\((-x)^2 = x^2\)</span>.</p>
+<p><strong>Multiplicativeness</strong></p>
+<ol type="1">
+<li><p>Proving <span class="math">\(|xy| = |x||y|\)</span></p>
+<p><span class="math">\(|xy|^2 = (xy)^2 = x^2y^2 = |x|^2 |y|^2 = (|x| \cdot |y|)^2\)</span></p>
+<p>Since absolute values are nonnegative, taking square roots yields <span class="math">\(|xy| = |x| \cdot |y|\)</span>.</p></li>
+<li><p>Proving <span class="math">\(\left|\dfrac{x}{y}\right| = \dfrac{|x|}{|y|}\)</span>, where <span class="math">\(y \neq 0\)</span></p>
+<p>From <span class="math">\(|xy| = \left|x \right|\left|y\right|\)</span>, we have <span class="math">\(\left|y\right| \cdot \left|\dfrac{x}{y}\right| = \left| x \right|\)</span></p>
+<p>Divide by <span class="math">\(\left|y\right|\)</span> to get <span class="math">\(\dfrac{|x|}{|y|}\)</span></p></li>
+</ol>
+<p><strong>Equality with another absolute value</strong></p>
+<p>Proving <span class="math">\(\left|x\right| = \left|y \right|\)</span> implies <span class="math">\(x = \pm y\)</span></p>
+<p>Assume <span class="math">\(\left|x\right| = \left|y\right|\)</span>.</p>
+<ul>
+<li><p>If <span class="math">\(y = 0\)</span>, then <span class="math">\(\left|x\right| = \left|0\right| =0\)</span>. From equality with a constant, yields <span class="math">\(x = 0\)</span>.</p></li>
+<li><p>If <span class="math">\(y \neq 0\)</span>, then from multiplicativeness, <span class="math">\(\left|\dfrac{x}{y}\right| = \dfrac{|x|}{|y|} =1\)</span>.</p>
+<p>From equality with a constant, yields <span class="math">\(\dfrac{x}{y} = \pm 1\)</span>. Hence <span class="math">\(x = \pm y\)</span>.</p></li>
+</ul>
+<p><strong>Absolute &amp; inequalities</strong></p>
+<ol type="1">
+<li><dl>
+<dt>Proving <span class="math">\(|x| \le y \iff -y \le x \le y\)</span></dt>
+<dd><p>If <span class="math">\(x \geq 0\)</span>, then <span class="math">\(x \leq y\)</span>.</p>
+<p>If <span class="math">\(x &lt; 0\)</span>, then <span class="math">\(-x \leq y\)</span> which implies <span class="math">\(x \geq -y\)</span>.</p>
+<p>Combining these two conditions forms: <span class="math">\[-y \leq x \leq y\]</span></p>
+<p>Thus, <span class="math">\(|x| \leq y \Leftrightarrow -y \leq x \leq y\)</span>.</p>
+</dd>
+</dl></li>
+<li><dl>
+<dt>Proving <span class="math">\(|x| \ge y \iff x \le -y \mbox{ or } y \le x\)</span></dt>
+<dd><p>If <span class="math">\(x \geq 0\)</span>, then <span class="math">\(x \geq y\)</span>.</p>
+<p>If <span class="math">\(x &lt; 0\)</span>, then <span class="math">\(-x \geq y\)</span>, which implies <span class="math">\(x \leq -y\)</span>.</p>
+<p>Combining these two condition forms <span class="math">\(x \le -y \mbox{ or } y \le x\)</span>.</p>
+<p>Thus, <span class="math">\(|x| \ge y \iff x \le -y \mbox{ or } y \le x\)</span>.</p>
+</dd>
+</dl></li>
+</ol>
+<p><strong>Triangle Inequality</strong></p>
+<p>Proving <span class="math">\(|a+b| \leq |a| + |b|\)</span>.</p>
+<p>Let <span class="math">\(|a| \leq |a|\)</span> and <span class="math">\(|b| \leq |b|\)</span>.</p>
+<p>Expand both of them to get:</p>
+<p><span class="math">\[-|a| \leq a \leq |a|\]</span> <span class="math">\[-|b| \leq b \leq |b|\]</span></p>
+<p>Combine both of them to get <span class="math">\[-|a|-|b| \leq a+b \leq |a|+|b|\]</span></p>
+<p>Compact to get <span class="math">\(|a+b| \leq |a| + |b|\)</span> as needed.</p>
+<p><strong>Reverse Triangle Inequality</strong></p>
+<p>Proving <span class="math">\(||a|-|b|| \leq |a-b|\)</span>.</p>
+<p>From triangle inequality, we form two triangle inequalities:</p>
+<p><span class="math">\[(1) \,\,\,\,|a|+|b-a| \geq |a+b-a| = |b|\]</span> <span class="math">\[(2) \,\,\,\,|b|+|a-b| \geq |b+a-b| = |a|\]</span></p>
+<p>From <span class="math">\((1)\)</span>, we do basic manipulation: <span class="math">\[(1^*) \,\,\,\,|b-a| = |a-b| \geq |b|-|a| \implies -|a-b| \leq |a|-|b|\]</span></p>
+<p>From <span class="math">\((2)\)</span>, we do basic manipulation: <span class="math">\[(2^*) \,\,\,\,|a-b| \geq |a| - |b|\]</span></p>
+<p>Now we have <span class="math">\(-|a-b| \leq |a|-|b|\)</span> and <span class="math">\(|a-b| \geq |a|-|b|\)</span>.</p>
+<p>Combine <span class="math">\((1^*)\)</span> and <span class="math">\((2^*)\)</span> to get <span class="math">\[-|a-b| \leq |a|-|b| \leq |a-b|\]</span></p>
+<p>Compact the inequality to get <span class="math">\(||a|-|b|| \leq |a-b|\)</span> as needed.</p>
+<h1 id="functions"><a href="#functions">Functions</a></h1>
+<h2 id="definition"><a href="#definition">Definition</a></h2>
+<p>A relation between a set of inputs and a set of permissible outputs with the property that each input is related to exactly one output.</p>
+<ul>
+<li><p>Input: domain</p></li>
+<li><p>Output: codomain (sometimes referred to as the range)</p></li>
+<li><p>Set of paired input and outputs: graph</p></li>
+</ul>
+<h3 id="image"><a href="#image">Image</a></h3>
+<p>An <strong>image</strong> is the subset of a function’s <strong>codomain</strong> which is the output of the function on a subset of its domain. Precisely, evaluating the function at each element of a subset <span class="math">\(X\)</span> of the domain produces a set called the <strong>image</strong> of <span class="math">\(X\)</span> under or through the function. The <strong>inverse image</strong> or <strong>preimage</strong> of a particular subset <span class="math">\(S\)</span> of the <strong>codomain</strong> of a function is the set of all elements of the domain that map to the members of <span class="math">\(S\)</span>.</p>
+<figure>
+<img src="images/image_map.png" />
+</figure>
+<h2 id="injective-and-surjective-functions"><a href="#injective-and-surjective-functions">Injective and surjective functions</a></h2>
+<ol type="1">
+<li><p>A function is called <strong>injective</strong> (or one-to-one, or an injection) if <span class="math">\(f(a) \neq f(b)\)</span> for any two different elements <span class="math">\(a\)</span> and <span class="math">\(b\)</span> of the domain.</p></li>
+<li><p>It is called <strong>surjective</strong> (or onto) if <span class="math">\(f(X) = Y\)</span>. That is, it is surjective if for <strong>every</strong> element <span class="math">\(y\)</span> in the <strong>codomain</strong> there is an <span class="math">\(x\)</span> in the <strong>domain</strong> such that <span class="math">\(f(x) = y\)</span>.</p></li>
+<li><p>Finally <span class="math">\(f\)</span> is called <strong>bijective</strong> if it is both <strong>injective</strong> and <strong>surjective</strong>.</p></li>
+</ol>
+<h1 id="the-cartesian-coordinate-plane"><a href="#the-cartesian-coordinate-plane">The Cartesian Coordinate Plane</a></h1>
+<p>A Cartesian coordinate system specifies each point uniquely in a plane by a pair of numerical coordinates, which are the signed distances from the point to two fixed perpendicular directed lines, measured in the same unit of length.</p>
+<ol type="1">
+<li><p><span class="math">\((a,b)\)</span> and <span class="math">\((c,d)\)</span> represent the same point in the plane if and only if <span class="math">\(a = c\)</span> and <span class="math">\(b = d\)</span></p></li>
+<li><p><span class="math">\((x,y)\)</span> lies on the <span class="math">\(x\)</span>-axis if and only if <span class="math">\(y=0\)</span></p></li>
+<li><p><span class="math">\((x,y)\)</span> lies on the <span class="math">\(y\)</span>-axis if and only if <span class="math">\(x=0\)</span></p></li>
+<li><p>The origin is the point <span class="math">\((0, 0)\)</span>. It is the only point common to both axes.</p></li>
+</ol>
+<p>The cartesian plane is divided into <strong>four</strong> quadrants:</p>
+<figure>
+<img src="images/cartesian_quadrants.png" />
+</figure>
+<h3 id="symmetry"><a href="#symmetry">Symmetry</a></h3>
+<p>Two points <span class="math">\((a,b)\)</span> and <span class="math">\((c,d)\)</span> in the planes are said to be:</p>
+<ol type="1">
+<li><p>symmetric about the x-axis if <span class="math">\(a = c\)</span> and <span class="math">\(b = -d\)</span></p></li>
+<li><p>symmetric about the y-axis if <span class="math">\(a = -c\)</span> and <span class="math">\(b = d\)</span></p></li>
+<li><p>symmetric about the origin if <span class="math">\(a = -c\)</span> and <span class="math">\(b = -d\)</span></p></li>
+</ol>
+<h3 id="reflections"><a href="#reflections">Reflections</a></h3>
+<p>To reflect a point <span class="math">\((x, y)\)</span> about the:</p>
+<ul>
+<li><p><span class="math">\(x\)</span>-axis, replace <span class="math">\(y\)</span> with <span class="math">\(−y\)</span></p></li>
+<li><p><span class="math">\(y\)</span>-axis, replace <span class="math">\(x\)</span> with <span class="math">\(−x\)</span></p></li>
+<li><p>origin, replace <span class="math">\(x\)</span> with <span class="math">\(−x\)</span> and <span class="math">\(y\)</span> with <span class="math">\(−y\)</span></p></li>
+</ul>
+<h3 id="distance-formula"><a href="#distance-formula">Distance Formula</a></h3>
+<p>The distance <span class="math">\(d\)</span> between the points <span class="math">\(P(x_0,y_0)\)</span> and <span class="math">\(Q(x_1,y_1)\)</span> is:</p>
+<p><span class="math">\(d = \sqrt{(x_1 - x_0)^2 + (y_1 - y_0)^2}\)</span></p>
+<h3 id="midpoint-formula"><a href="#midpoint-formula">Midpoint Formula</a></h3>
+<p>The midpoint M of the line segment connecting <span class="math">\(P(x_0,y_0)\)</span> and <span class="math">\(Q(x_1,y_1)\)</span> is:</p>
+<p><span class="math">\(M = \left(\dfrac{x_0 + x_1}{2}, \dfrac{y_0 + y_1}{2}\right)\)</span></p>
+<h1 id="linear-equation"><a href="#linear-equation">Linear Equation</a></h1>
+<h2 id="slopeintercept-form"><a href="#slopeintercept-form">Slope–intercept form</a></h2>
+<p>A common form of a linear equation in the two variables x and y is:</p>
+<p><span class="math">\(y = mx + b\)</span></p>
+<ol type="1">
+<li><span class="math">\(m\)</span> is the slope of the line</li>
+<li><span class="math">\(b\)</span> is the y-intercept</li>
+<li><span class="math">\(\dfrac{-b}{m}\)</span> is the x-intercept</li>
+</ol>
+<h2 id="pointslope-form"><a href="#pointslope-form">Point–slope form</a></h2>
+<p><span class="math">\(y-y_1 = m(x-x_1)\)</span></p>
+<ol type="1">
+<li><span class="math">\((x_1, y_1)\)</span> is any point on the line</li>
+<li><span class="math">\(m\)</span> is the proportionality constant</li>
+</ol>
+<h2 id="two-point-form"><a href="#two-point-form">Two-point form</a></h2>
+<p>Extending the point-slope form with a second point on the line:</p>
+<p><span class="math">\(y-y_1 = \dfrac{y_2-y_1}{x_2-x_1}(x-x_1)\)</span></p>
+<ol type="1">
+<li><span class="math">\((x_1, y_1)\)</span> and <span class="math">\((x_2, y_2)\)</span> are two points on the line with <span class="math">\(x_2 \neq x_1\)</span></li>
+</ol>
+<h2 id="intercept-form"><a href="#intercept-form">Intercept form</a></h2>
+<p><span class="math">\(\dfrac{x}{a} + \dfrac{y}{b} = 1\)</span></p>
+<ol type="1">
+<li><span class="math">\(a\)</span> and <span class="math">\(b\)</span> must be nonzero.</li>
+<li>The graph of the equation has x-intercept <span class="math">\(a\)</span> and y-intercept <span class="math">\(b\)</span>.</li>
+</ol>
+<h2 id="properties-of-slopes"><a href="#properties-of-slopes">Properties of slopes</a></h2>
+<p><strong>Parallel</strong></p>
+<ol type="1">
+<li>Two lines are parallel if and only if their slopes are equal and they are not coincident,</li>
+<li>or if they both are vertical and therefore have undefined slopes.</li>
+</ol>
+<p><strong>Perpendicular</strong></p>
+<ol type="1">
+<li>Two lines are perpendicular if the product of their slopes is −1,</li>
+<li>or one has a slope of 0 (a horizontal line) and the other has an undefined slope (a vertical line).</li>
+</ol>
+<p><span class="math">\(m_1 = \dfrac{-1}{m_2}\)</span></p>
+<h1 id="quadratics"><a href="#quadratics">Quadratics</a></h1>
+<h2 id="polynomials-factorable-over-the-rationals"><a href="#polynomials-factorable-over-the-rationals">Polynomials factorable over the rationals</a></h2>
+<p>Quadratic polynomials can sometimes be factored into two binomials with simple integer coefficients by use of Vieta’s formulas, without the need to use the quadratic formula.</p>
+<p>This is the procedure to factor <span class="math">\(ax + bx + c =0\)</span> that has at least 1 root.</p>
+<p>If possible, check the discriminant <span class="math">\(\Delta = b^2 - 4ac\)</span>:</p>
+<ol type="1">
+<li><p><span class="math">\(\Delta &gt; 0\)</span> indicates two roots</p></li>
+<li><p><span class="math">\(\Delta = 0\)</span> indicates one root</p></li>
+<li><p><span class="math">\(\Delta &lt; 0\)</span> indicates no roots</p></li>
+</ol>
+<p><strong>Note:</strong> If a polynomial with integer coefficients has a discriminant that is a perfect square, that polynomial is factorable over the integers (or rational numbers).</p>
+<p><strong>Note2:</strong> Further, for a quadratic polynomial with rational coefficients, it factors over the rationals if and only if the discriminant – which is necessarily a rational number, being a polynomial in the coefficients – is in fact a square.</p>
+<p>Set up a box like the following:</p>
+<pre><code>
+ ax^2 | 
+------------
+      |  c
+</code></pre>
+<p>Then find factors of <span class="math">\(ac\)</span> that add up to <span class="math">\(b\)</span>.</p>
+<ul>
+<li>Let <span class="math">\(a = mn\)</span> and <span class="math">\(c = pq\)</span></li>
+<li>Let <span class="math">\(qn + mp = b\)</span>.</li>
+</ul>
+<p><span class="math">\(qn\)</span> and <span class="math">\(mp\)</span> are factors you need to find. Fill these factors in the empty cells of the box:</p>
+<pre><code>
+   ax^2  | (qn)x
+    ------------
+   (pm)x |  c
+
+</code></pre>
+<p>Then factor according to the fact that <span class="math">\(a = mn\)</span> and <span class="math">\(c = pq\)</span>:</p>
+<pre><code>
+     mx       q
+
+nx   ax^2  | (qn)x
+    ------------
+p    (pm)x |  c
+
+</code></pre>
+<h2 id="completing-the-square"><a href="#completing-the-square">Completing the square</a></h2>
+<p>Rewriting <span class="math">\(ax^2 + bx + c\)</span> in the form of <span class="math">\(a(x+h)^2 + k\)</span></p>
+<p>With <span class="math">\(h = \dfrac{b}{2a}\)</span>, and <span class="math">\(k = c -ah^2\)</span>.</p>
+<p>This can be accomplished by</p>
+<ol type="1">
+<li><p>Factoring the number <span class="math">\(a\)</span> from the terms involving <span class="math">\(x\)</span></p></li>
+<li><p>Adding and subtracting the square of half the coefficient of <span class="math">\(x\)</span>.</p></li>
+</ol>
+<p><strong>Derivation 1</strong></p>
+<p><span class="math">\(ax^2 + bx + c = a (x^2 + \dfrac{b}{a}x) + c\)</span></p>
+<p><span class="math">\(= a \left[x^2 + \dfrac{b}{a}x + \left(\dfrac{b}{2a} \right)^2 - \left( \dfrac{b}{2a} \right)^2\right] + c\)</span></p>
+<p><span class="math">\(= a \left(x + \dfrac{b}{2a} \right)^2 + \left( c- \dfrac{b^2}{4a} \right)\)</span></p>
+<p>Then let <span class="math">\(h = \dfrac{b}{2a}\)</span>, and <span class="math">\(k = c -ah^2\)</span>.</p>
+<p><strong>Derivation 2</strong></p>
+<p>Let <span class="math">\(ax^2 + bx + c\)</span>, assume <span class="math">\(a(x+h)^2 + k\)</span> is an alternate form.</p>
+<p>Expand <span class="math">\(a(x+h)^2 + k\)</span> to get</p>
+<p><span class="math">\(ax^2 + (2ah)x + (ah^2 + k)\)</span></p>
+<p>Let <span class="math">\(b = 2ah\)</span>, which can be rewritten as <span class="math">\(h = \dfrac{b}{2a}\)</span></p>
+<p>Finally, let <span class="math">\(c = ah^2 + k\)</span>, which can be rewritten as <span class="math">\(k= c -ah^2\)</span>.</p>
+<h2 id="quadratic-formula"><a href="#quadratic-formula">Quadratic formula</a></h2>
+<p>The roots for the quadratic equation <span class="math">\(ax^2 +bx+c = 0\)</span> are:</p>
+<p><span class="math">\(x=\dfrac{-b \pm \sqrt{b^2-4ac}}{2a}\)</span></p>
+<h3 id="discriminant"><a href="#discriminant">Discriminant</a></h3>
+<p><strong>Checking for rational roots:</strong></p>
+<ol type="1">
+<li><p><span class="math">\(a\)</span>, <span class="math">\(b\)</span>, and <span class="math">\(c\)</span> are rational coefficients</p></li>
+<li><p>the discriminant is a square (or perfect square)</p></li>
+</ol>
+<h3 id="derivation-of-the-quadratic-formula"><a href="#derivation-of-the-quadratic-formula">Derivation of the quadratic formula</a></h3>
+<p><strong>By completing the square</strong></p>
+<p>The quadratic formula can be derived by the method of completing the square, so as to make use of the algebraic identity:</p>
+<p><span class="math">\(x^2+2xh+h^2 = (x+h)^2.\,\!\)</span></p>
+<p>Dividing the quadratic equation <span class="math">\(ax^2+bx+c=0 \,\!\)</span> by <span class="math">\(a\)</span> (which is allowed because <span class="math">\(a\)</span> is non-zero), gives:</p>
+<p><span class="math">\(x^2 + \dfrac{b}{a} x + \dfrac{c}{a}=0,\,\!\)</span> or <span class="math">\(x^2 + \dfrac{b}{a} x= -\dfrac{c}{a}.\)</span></p>
+<p>The quadratic equation is now in a form to which the method of completing the square can be applied.</p>
+<p>To “complete the square” is to add a constant to both sides of the equation such that the left hand side becomes a complete square:</p>
+<p><span class="math">\(x^2+\dfrac{b}{a}x+\left( \dfrac{1}{2}\dfrac{b}{a} \right)^2 =-\dfrac{c}{a}+\left( \dfrac{1}{2}\dfrac{b}{a} \right)^2,\!\)</span></p>
+<p>which produces</p>
+<p><span class="math">\(\left(x+\dfrac{b}{2a}\right)^2=-\dfrac{c}{a}+\dfrac{b^2}{4a^2}.\,\!\)</span></p>
+<p>The right side can be written as a single fraction, with common denominator <span class="math">\(4a^2\)</span>.</p>
+<p>This gives <span class="math">\(\left(x+\dfrac{b}{2a}\right)^2=\dfrac{b^2-4ac}{4a^2}.\)</span></p>
+<p>Taking the square root of both sides yields <span class="math">\(x+\dfrac{b}{2a}=\pm\dfrac{\sqrt{b^2-4ac\ }}{2a}.\)</span></p>
+<p>Isolating <span class="math">\(x\)</span>, gives <span class="math">\(x=-\dfrac{b}{2a}\pm\dfrac{\sqrt{b^2-4ac\ }}{2a}=\dfrac{-b\pm\sqrt{b^2-4ac\ }}{2a}.\)</span></p>
+<h1 id="factorisation-of-polynominals"><a href="#factorisation-of-polynominals">Factorisation of polynominals</a></h1>
+<h2 id="quadratics-1"><a href="#quadratics-1">Quadratics</a></h2>
+<h3 id="perfect-square-trinomials"><a href="#perfect-square-trinomials">Perfect square trinomials</a></h3>
+<p>Some quadratics can be factored into two identical binomials. These quadratics are called perfect square trinomials. Perfect square trinomials can be factored as follows:</p>
+<p><span class="math">\(a^2 + 2ab + b^2 = (a + b)^2\)</span></p>
+<p>and</p>
+<p><span class="math">\(a^2 - 2ab + b^2 = (a - b)^2\)</span></p>
+<h3 id="sumdifference-of-two-squares"><a href="#sumdifference-of-two-squares">Sum/difference of two squares</a></h3>
+<p>Another common type of algebraic factoring is called the difference of two squares. It is the application of the formula</p>
+<p><span class="math">\(a^2 - b^2 = (a+b)(a-b)\)</span></p>
+<p>If the two terms are subtracted, simply apply the formula whether or not they are perfect squares. If they are added, the two binomials obtained from the factoring will each have an imaginary term. This formula can be represented as</p>
+<p><span class="math">\(a^2 + b^2 = (a+bi)(a-bi)\)</span></p>
+<h2 id="factoring-other-polynomials"><a href="#factoring-other-polynomials">Factoring other polynomials</a></h2>
+<h3 id="sumdifference-of-two-cubes"><a href="#sumdifference-of-two-cubes">Sum/difference of two cubes</a></h3>
+<p>Another formula for factoring is the sum or difference of two cubes. The sum can be represented by</p>
+<p><span class="math">\(a^3 + b^3 = (a + b)(a^2 - ab + b^2)\)</span></p>
+<p>and the difference by</p>
+<p><span class="math">\(a^3 - b^3 = (a - b)(a^2 + ab + b^2)\)</span></p>
+<h3 id="difference-of-two-fourth-powers"><a href="#difference-of-two-fourth-powers">Difference of two fourth powers</a></h3>
+<p>Another formula is the difference of two fourth powers, which is</p>
+<p><span class="math">\(a^4 - b^4 = (a - b)(a + b)(a^2 + b^2)\)</span></p>
+<h1 id="polynomial-long-division"><a href="#polynomial-long-division">Polynomial long division</a></h1>
+<p>Polynomial long division is an algorithm for dividing a polynomial by another polynomial of the same or lower degree, a generalised version of the familiar arithmetic technique called long division.</p>
+<p><span class="math">\(\dfrac{A(x)}{B(x)} = Q(x) + \dfrac{R(x)}{B(x)}\)</span></p>
+<p><span class="math">\(A(x) = B(x)Q(x) + R(x)\)</span></p>
+<ul>
+<li><p><span class="math">\(A(x)\)</span> is the dividend</p></li>
+<li><p><span class="math">\(B(x)\)</span> is the divisor. A polynomial of the same degree or lower as <span class="math">\(A(x)\)</span></p></li>
+<li><p><span class="math">\(Q(x)\)</span> is the quotient</p></li>
+<li><p><span class="math">\(R(x)\)</span> is the remainder. Can be <span class="math">\(0\)</span> or a polynomial of a lower degree than <span class="math">\(B(x)\)</span></p></li>
+</ul>
+<p><strong>Procedure</strong></p>
+<ol type="1">
+<li><p>Divide the first term of the dividend by the highest term of the divisor (meaning the one with the highest power of x, which in this case is x). Place the result above the bar.</p></li>
+<li><p>Multiply the divisor by the result just obtained and place below the dividend.</p></li>
+<li><p>Subtract the product just obtained from the appropriate terms of the original dividend, and write the result underneath. Then, “bring down” the next term from the dividend.</p></li>
+<li><p>Repeat the previous three steps, except this time use the terms that have just been written as the dividend. Stop when there is nothing to “pull down”.</p></li>
+</ol>
+<p><strong>“Missing” Terms</strong></p>
+<p>Sometimes there will be “missing terms”. In that case either leave gaps, or include the missing terms with a coefficient of zero.</p>
+<p><a href="http://www.mathsisfun.com/algebra/polynomials-division-long.html">Reference</a></p>
+<h2 id="polynomial-remainder-theorem"><a href="#polynomial-remainder-theorem">Polynomial remainder theorem</a></h2>
+<p>The polynomial remainder theorem or little Bézout’s theorem is an application of polynomial long division.</p>
+<p>It states that the remainder of a polynomial <span class="math">\(f(x)\)</span> divided by a linear divisor <span class="math">\(x-a\)</span> is equal to <span class="math">\(f(a)\)</span>.</p>
+<p><strong>Proof</strong></p>
+<p>The polynomial remainder theorem follows from the definition of polynomial long division; denoting the divisor, quotient and remainder by, respectively, <span class="math">\(g(x)\,\)</span>, <span class="math">\(q(x)\,\)</span>, and <span class="math">\(r(x)\,\)</span>, polynomial long division gives a solution of the equation:</p>
+<p><span class="math">\(f(x)=q(x)g(x) + r(x)\,,\)</span></p>
+<p>where the degree of <span class="math">\(r(x)\,\)</span> is less than that of <span class="math">\(g(x)\,\)</span>.</p>
+<p>If we take <span class="math">\(g(x) = x-a\,\)</span> as the divisor, giving the degree of <span class="math">\(r(x)\,\)</span> as 0, i.e. <span class="math">\(r(x) = r\,\)</span>:</p>
+<p><span class="math">\(f(x)=q(x)(x-a) + r\,.\)</span></p>
+<p>Setting <span class="math">\(x=a \!\,\)</span> we obtain <span class="math">\(f(a)=r\,.\)</span></p>
+<h3 id="factor-theorem"><a href="#factor-theorem">Factor theorem</a></h3>
+<p>The factor theorem is a theorem linking factors and zeros of a polynomial. It is a special case of the polynomial remainder theorem.</p>
+<p><strong>Definition</strong> : The factor theorem states that a polynomial <span class="math">\(f(x)\)</span> has a factor <span class="math">\((x - k)\)</span> if and only if <span class="math">\(f(k)=0\)</span>.</p>
+<p>The factor theorem is also used to remove known zeros from a polynomial while leaving all unknown zeros intact, thus producing a lower degree polynomial whose zeros may be easier to find.</p>
+<p>Abstractly, the method is as follows:</p>
+<ul>
+<li><p>“Guess” a zero <span class="math">\(a\)</span> of the polynomial <span class="math">\(f\)</span>. (In general, this can be ‘’very hard’’, but math textbook problems that involve solving a polynomial equation are often designed so that some roots are easy to discover.)</p></li>
+<li><p>Use the factor theorem to conclude that <span class="math">\((x-a)\)</span> is a factor of <span class="math">\(f(x)\)</span>.</p></li>
+<li><p>Compute the polynomial <span class="math">\(g(x) = f(x) \big/ (x-a)\)</span>, for example using polynomial long division.</p></li>
+<li><p>Conclude that any root <span class="math">\(x \neq a\)</span> of <span class="math">\(f(x)=0\)</span> is a root of <span class="math">\(g(x)=0\)</span>. Since the polynomial degree of <span class="math">\(g\)</span> is one less than that of <span class="math">\(f\)</span>, it is “simpler” to find the remaining zeros by studying <span class="math">\(g\)</span>.</p></li>
+</ul>
+<h2 id="synthetic-division"><a href="#synthetic-division">Synthetic division</a></h2>
+<p>Synthetic division is a method of performing polynomial long division, with less writing and fewer calculations. It is mostly taught for division by binomials of the form <span class="math">\(x-a\)</span>, but the method generalizes to division by any monic polynomial.</p>
+<h3 id="regular-synthetic-division"><a href="#regular-synthetic-division">Regular synthetic division</a></h3>
+<p>The first example is synthetic division with only a monic (leading coefficient is 1) linear denominator <span class="math">\(x-a\)</span>:</p>
+<p><span class="math">\(\dfrac{x^3 - 12x^2 - 42}{x - 3}\)</span></p>
+<p>Write the coefficients of the polynomial to be divided at the top (the zero is for the unseen <span class="math">\(0x\)</span>).</p>
+<p><span class="math">\(\begin{array}{cc}     \begin{array}{r} \\  \\ \end{array}     &amp;     \begin{array}{|rrrr}          1 &amp; -12 &amp; 0 &amp; -42 \\           &amp;     &amp;   &amp;     \\         \hline      \end{array} \end{array}\)</span></p>
+<p>Negate the coefficients of the divisor:</p>
+<p><span class="math">\(\begin{array}{rr}       -1x &amp; + 3 \end{array}\)</span></p>
+<p>Write in every coefficient of the divisor but the first one on the left:</p>
+<p><span class="math">\(\begin{array}{cc}     \begin{array}{r} \\ 3 \\ \end{array}     &amp;     \begin{array}{|rrrr}          1 &amp; -12 &amp; 0 &amp; -42 \\           &amp;     &amp;   &amp;     \\         \hline      \end{array} \end{array}\)</span></p>
+<p>Note the change of sign from <span class="math">\(-3\)</span> to <span class="math">\(3\)</span>. “Drop” the first coefficient after the bar to the last row.</p>
+<p><span class="math">\(\begin{array}{cc}     \begin{array}{r} \\ 3 \\ \\ \end{array}     &amp;     \begin{array}{|rrrr}           1 &amp; -12 &amp; 0 &amp; -42 \\           &amp;     &amp;   &amp;     \\         \hline          1 &amp;     &amp;   &amp;     \\     \end{array} \end{array}\)</span></p>
+<p>Multiply the dropped number by the number before the bar, and place it in the next column:</p>
+<p><span class="math">\(\begin{array}{cc}     \begin{array}{r} \\ 3 \\ \\ \end{array}     &amp;     \begin{array}{|rrrr}           1 &amp; -12 &amp; 0 &amp; -42 \\           &amp;   3 &amp;   &amp;     \\         \hline          1 &amp;     &amp;   &amp;     \\     \end{array} \end{array}\)</span></p>
+<p>Perform an addition in the next column:</p>
+<p><span class="math">\(\begin{array}{cc}     \begin{array}{c} \\ 3 \\ \\ \end{array}     &amp;     \begin{array}{|rrrr}           1 &amp; -12 &amp; 0 &amp; -42 \\           &amp;   3 &amp;   &amp;     \\         \hline          1 &amp;  -9 &amp;   &amp;     \\     \end{array} \end{array}\)</span></p>
+<p>Repeat the previous two steps and the following is obtained:</p>
+<p><span class="math">\(\begin{array}{cc}     \begin{array}{c} \\ 3 \\ \\ \end{array}     &amp;     \begin{array}{|rrrr}           1 &amp; -12 &amp;   0 &amp; -42 \\           &amp;   3 &amp; -27 &amp; -81 \\         \hline          1 &amp; -9 &amp; -27 &amp; -123      \end{array} \end{array}\)</span></p>
+<p>Count the terms to the left of the bar. Since there is only one, the remainder has degree zero. Mark the separation with a vertical bar:</p>
+<p><span class="math">\(\begin{array}{rrr|r}      1 &amp;  -9 &amp; -27 &amp; -123  \end{array}\)</span></p>
+<p>The terms are written with increasing degree from right to left beginning with degree zero for both the remainder and the result:</p>
+<p><span class="math">\(\begin{array}{rrr|r}      1x^2 &amp;  -9x &amp; -27 &amp; -123  \end{array}\)</span></p>
+<p>The result of our division is:</p>
+<p><span class="math">\(\dfrac{x^3 - 12x^2 - 42}{x - 3} = x^2 - 9x - 27 - \dfrac{123}{x - 3}\)</span></p>
+<h3 id="expanded-synthetic-division"><a href="#expanded-synthetic-division">Expanded synthetic division</a></h3>
+<p>This method works for bigger divisors with only a slight modification with <strong>changes in bold</strong>. Using the same steps as before, let’s try to perform the following division:</p>
+<p><span class="math">\(\dfrac{x^3 - 12x^2 - 42}{x^2 + x - 3}\)</span></p>
+<p>We concern ourselves only with the coefficients.</p>
+<p>Write the coefficients of the polynomial to be divided at the top:</p>
+<p><span class="math">\(\begin{array}{|rrrr}       1 &amp; \text{-}12 &amp; 0 &amp; \text{-}42  \end{array}\)</span></p>
+<p>Negate the coefficients of the divisor:</p>
+<p><span class="math">\(\begin{array}{rrr}       \text{-}1x^2 &amp;-1x &amp;+3 \end{array}\)</span></p>
+<p>Write in every coefficient but the first one on the left <strong>in an upward right diagonal</strong> (see next diagram):</p>
+<p><span class="math">\(\begin{array}{cc}     \begin{array}{rr} \\ &amp;3 \\ \text{-}1&amp; \\ \end{array}     &amp;     \begin{array}{|rrrr}          1 &amp; \text{-}12 &amp; 0 &amp; \text{-}42 \\         0  &amp;     &amp;   &amp;     \\         0  &amp;     &amp;   &amp;     \\         \hline      \end{array} \end{array}\)</span></p>
+<p>Note the change of sign from <strong><span class="math">\(1\)</span> to <span class="math">\(-1\)</span> and from <span class="math">\(-3\)</span> to <span class="math">\(3\)</span></strong>. “Drop” the first coefficient after the bar to the last row:</p>
+<p><span class="math">\(\begin{array}{cc}     \begin{array}{rr} \\ &amp;3 \\ \text{-}1&amp; \\ \\ \end{array}     &amp;     \begin{array}{|rrrr}          1 &amp; \text{-}12 &amp; 0 &amp; \text{-}42 \\         0  &amp;     &amp;   &amp;     \\         0  &amp;     &amp;   &amp;     \\         \hline          1 &amp;     &amp;   &amp;     \\         \end{array} \end{array}\)</span></p>
+<p><span class="math">\(\begin{array}{cc}     \begin{array}{rr} \\ &amp;3 \\ \text{-}1&amp; \\ \\ \end{array}     &amp;     \begin{array}{|rrrr}          1 &amp; \text{-}12 &amp; 0 &amp; \text{-}42 \\         0  &amp;     &amp;   &amp;     \\         0  &amp;     &amp;   &amp;     \\         \hline          1 &amp;     &amp;   &amp;     \\         \end{array} \end{array}\)</span></p>
+<p>Multiply the dropped number by the <strong>diagonal</strong> before the bar, and place the resulting entries <strong>diagonally to the right</strong> from the dropped entry:</p>
+<p><span class="math">\(\begin{array}{cc}     \begin{array}{rr} \\ &amp;3 \\ \text{-}1&amp; \\ \\ \end{array}     &amp;     \begin{array}{|rrrr}          1 &amp; \text{-}12 &amp; 0 &amp; \text{-}42 \\         0  &amp;     &amp; 3 &amp;     \\         0  &amp;  \text{-}1 &amp;   &amp;     \\         \hline          1 &amp;     &amp;   &amp;     \\         \end{array} \end{array}\)</span></p>
+<p>Perform an addition in the next column:</p>
+<p><span class="math">\(\begin{array}{cc}     \begin{array}{rr} \\ &amp;3 \\ \text{-}1&amp; \\ \\ \end{array}     &amp;     \begin{array}{|rrrr}          1 &amp; \text{-}12 &amp; 0 &amp; \text{-}42 \\         0  &amp;     &amp; 3 &amp;     \\         0  &amp;  \text{-}1 &amp;   &amp;     \\         \hline          1 &amp; \text{-}13 &amp;   &amp;     \\         \end{array} \end{array}\)</span></p>
+<p>Repeat the previous two steps <strong>until you would go past the entries at the top with the next diagonal</strong>:</p>
+<p><span class="math">\(\begin{array}{cc}     \begin{array}{rr} \\ &amp;3 \\ \text{-}1&amp; \\ \\ \end{array}     &amp;     \begin{array}{|rrrr}          1 &amp; \text{-}12 &amp;  0 &amp; \text{-}42 \\         0  &amp;     &amp;  3 &amp; \text{-}39 \\         0  &amp;  \text{-}1 &amp; 13 &amp;     \\         \hline          1 &amp; \text{-}13 &amp; 16 &amp;     \\         \end{array} \end{array}\)</span></p>
+<p>Then simply add up any remaining columns:</p>
+<p><span class="math">\(\begin{array}{cc}     \begin{array}{rr} \\ &amp;3 \\ \text{-}1&amp; \\ \\ \end{array}     &amp;     \begin{array}{|rrrr}          1 &amp; \text{-}12 &amp;  0 &amp; \text{-}42 \\         0  &amp;     &amp;  3 &amp; \text{-}39 \\         0  &amp;  \text{-}1 &amp; 13 &amp;     \\         \hline          1 &amp; \text{-}13 &amp; 16 &amp; \text{-}81 \\         \end{array} \end{array}\)</span></p>
+<p>Count the terms to the left of the bar. Since there are two, the remainder has degree one. Mark the separation with a vertical bar:</p>
+<p><span class="math">\(\begin{array}{rr|rr}      1 &amp;  \text{-}13 &amp; 16 &amp; \text{-}81  \end{array}\)</span></p>
+<p>The terms are written with increasing degree from right to left beginning with degree zero for both the remainder and the result:</p>
+<p><span class="math">\(\begin{array}{rr|rr}      1x &amp;  \text{-}13 &amp; 16x &amp; \text{-}81  \end{array}\)</span></p>
+<p>The result of our division is:</p>
+<p><span class="math">\(\dfrac{x^3 - 12x^2 - 42}{x^2 + x - 3} = x - 13 + \dfrac{16x - 81}{x^2 + x - 3}\)</span></p>
+<h3 id="compact-expanded-synthetic-division"><a href="#compact-expanded-synthetic-division">Compact Expanded Synthetic Division</a></h3>
+<p>However, the <strong>diagonal</strong> format above becomes less space-efficient when the degree of the divisor exceeds half of the degree of the dividend. It is easy to see that we have complete freedom to write each product in any row, as long as it is in the correct column. So the algorithm can be <strong>compactified</strong> by a <strong>greedy strategy</strong>, as illustrated in the division below.</p>
+<p><span class="math">\(\dfrac{ax^7+bx^6+cx^5+dx^4+ex^3+fx^2+gx+h}{ix^4-jx^3-kx^2-lx-m}=nx^3+ox^2+px+q+\dfrac{rx^3+sx^2+tx+u}{ix^4-jx^3-kx^2-lx-m}\)</span></p>
+<p><span class="math">\(\begin{array}{cc}     \begin{array}{rrrr} \\ \\ \\ \\ j &amp;k &amp; l &amp; m \\ \end{array}     &amp;     \begin{array}{|rrrr|rrrr}           &amp;    &amp;    &amp;    &amp; qj &amp;  &amp;  &amp;  \\          &amp;    &amp;    &amp; pj &amp; pk &amp; qk &amp;  &amp;  \\          &amp;    &amp; oj &amp; ok &amp; ol &amp; pl &amp; ql &amp;  \\          &amp; nj &amp; nk &amp; nl &amp; nm &amp; om &amp; pm &amp; qm \\         a &amp; b &amp; c &amp; d &amp; e &amp; f &amp; g &amp; h \\         \hline           a &amp; o_0 &amp; p_0 &amp; q_0 &amp; r &amp;  s &amp; t &amp; u \\          n &amp; o &amp; p &amp; q &amp; &amp;  &amp;  &amp;  \\     \end{array} \end{array}\)</span></p>
+<p>The following describes how to perform the algorithm; this algorithm includes steps for dividing non-monic divisors:</p>
+<ol type="1">
+<li><p>Write the coefficients of the dividend on a bar</p>
+<p><span class="math">\(\begin{array}{cc}     \begin{array}{|rrrrrrrr}          a &amp; b &amp; c &amp; d &amp; e &amp; f &amp; g &amp; h \\         \hline      \end{array} \end{array}\)</span></p></li>
+<li><p>Negate the coefficients of the divisor. Write in every coefficient of the divisor but the first (leading coefficient) one on the left.</p>
+<p><span class="math">\(\begin{array}{cc}     \begin{array}{rrrr} j &amp;k &amp; l &amp; m \\ \end{array}     &amp;     \begin{array}{|rrrrrrrr}          a &amp; b &amp; c &amp; d &amp; e &amp; f &amp; g &amp; h \\         \hline      \end{array} \end{array}\)</span></p></li>
+<li><p>From the number of coefficients placed on the left side, count the number of dividend coefficients above the bar and then place a vertical bar on the row below. This vertical bar marks the separation between the quotient and the remainder.</p>
+<p><span class="math">\(\begin{array}{cc}     \begin{array}{rrrr} j &amp;k &amp; l &amp; m \\ \\ \end{array}     &amp;     \begin{array}{|rrrr|rrrr}          a &amp; b &amp; c &amp; d &amp; e &amp; f &amp; g &amp; h \\         \hline           &amp;  &amp;  &amp;  &amp; &amp;  &amp;  &amp;  \\     \end{array} \end{array}\)</span></p></li>
+<li><p>Drop the first coefficient of the dividend below the bar.</p>
+<p><span class="math">\(\begin{array}{cc}     \begin{array}{rrrr} \\ \\ j &amp;k &amp; l &amp; m \\ \end{array}     &amp;     \begin{array}{|rrrr|rrrr}          a &amp; b &amp; c &amp; d &amp; e &amp; f &amp; g &amp; h \\         \hline           a &amp;  &amp;  &amp;  &amp; &amp;  &amp;  &amp;  \\     \end{array} \end{array}\)</span></p></li>
+<li><ul>
+<li><p>Divide the last dropped/summed number by the leading coefficient of the divisor and place it on the row below (this doesn’t need to be done if the coefficient is 1).</p>
+<p>In this case <span class="math">\(n = \dfrac{a}{i}\)</span></p></li>
+<li><p>Multiply the last dropped/summed number (or the divided dropped/summed number) to each negated coefficients on the left (starting with the left most); skip if the summed number is zero. Place each product on top of the subsequent columns.</p></li>
+</ul>
+<p><span class="math">\(\begin{array}{cc}     \begin{array}{rrrr}  \\ j &amp;k &amp; l &amp; m \\ \end{array}     &amp;     \begin{array}{|rrrr|rrrr}           &amp; nj &amp; nk &amp; nl &amp; nm &amp;  &amp;  &amp;  \\         a &amp; b &amp; c &amp; d &amp; e &amp; f &amp; g &amp; h \\         \hline           a &amp;  &amp;  &amp;  &amp; &amp;  &amp;  &amp;  \\          n &amp;  &amp;  &amp;  &amp; &amp;  &amp;  &amp;  \\     \end{array} \end{array}\)</span></p></li>
+<li><p>Perform an column-wise addition on the next column.</p>
+<p><span class="math">\(\begin{array}{cc}     \begin{array}{rrrr}  \\ j &amp;k &amp; l &amp; m \\ \end{array}     &amp;     \begin{array}{|rrrr|rrrr}           &amp; nj &amp; nk &amp; nl &amp; nm &amp;  &amp;  &amp;  \\         a &amp; b &amp; c &amp; d &amp; e &amp; f &amp; g &amp; h \\         \hline           a &amp; o_0 &amp;  &amp;  &amp; &amp;  &amp;  &amp;  \\          n &amp;  &amp;  &amp;  &amp; &amp;  &amp;  &amp;  \\     \end{array} \end{array}\)</span></p></li>
+<li><p>Repeat the previous two steps. Stop when you performed the previous two steps on the number just before the vertical bar.</p>
+<p>Let <span class="math">\(o = \dfrac{o_0}{i}\)</span></p>
+<p><span class="math">\(\begin{array}{cc}     \begin{array}{rrrr} \\ \\ j &amp;k &amp; l &amp; m \\ \end{array}     &amp;     \begin{array}{|rrrr|rrrr}           &amp;    &amp; oj &amp; ok &amp; ol &amp;  &amp;  &amp;  \\          &amp; nj &amp; nk &amp; nl &amp; nm &amp; om &amp;  &amp;  \\         a &amp; b &amp; c &amp; d &amp; e &amp; f &amp; g &amp; h \\         \hline           a &amp; o_0 &amp; p_0 &amp;  &amp; &amp;  &amp;  &amp;  \\          n &amp; o &amp;  &amp;  &amp; &amp;  &amp;  &amp;  \\     \end{array} \end{array}\)</span></p>
+<p>Let <span class="math">\(p = \dfrac{p_0}{i}\)</span></p>
+<p><span class="math">\(\begin{array}{cc}     \begin{array}{rrrr} \\ \\ \\ j &amp;k &amp; l &amp; m \\ \end{array}     &amp;     \begin{array}{|rrrr|rrrr}           &amp;    &amp;    &amp; pj &amp; pk &amp;  &amp;  &amp;  \\          &amp;    &amp; oj &amp; ok &amp; ol &amp; pl &amp;  &amp;  \\          &amp; nj &amp; nk &amp; nl &amp; nm &amp; om &amp; pm &amp;  \\         a &amp; b &amp; c &amp; d &amp; e &amp; f &amp; g &amp; h \\         \hline           a &amp; o_0 &amp; p_0 &amp; q_0 &amp; &amp;  &amp;  &amp;  \\          n &amp; o &amp; p &amp;  &amp; &amp;  &amp;  &amp;  \\     \end{array} \end{array}\)</span></p>
+<p>Let <span class="math">\(q = \dfrac{q_0}{i}\)</span></p>
+<p><span class="math">\(\begin{array}{cc}     \begin{array}{rrrr} \\ \\ \\ \\ j &amp;k &amp; l &amp; m \\ \end{array}     &amp;     \begin{array}{|rrrr|rrrr}           &amp;    &amp;    &amp;    &amp; qj &amp;  &amp;  &amp;  \\          &amp;    &amp;    &amp; pj &amp; pk &amp; qk &amp;  &amp;  \\          &amp;    &amp; oj &amp; ok &amp; ol &amp; pl &amp; ql &amp;  \\          &amp; nj &amp; nk &amp; nl &amp; nm &amp; om &amp; pm &amp; qm \\         a &amp; b &amp; c &amp; d &amp; e &amp; f &amp; g &amp; h \\         \hline           a &amp; o_0 &amp; p_0 &amp; q_0 &amp; r &amp;  &amp;  &amp;  \\          n &amp; o &amp; p &amp; q &amp; &amp;  &amp;  &amp;  \\     \end{array} \end{array}\)</span></p></li>
+<li><p>Perform the remaining column-wise additions on the subsequent columns (getting the remainder).</p>
+<p><span class="math">\(\begin{array}{cc}     \begin{array}{rrrr} \\ \\ \\ \\ j &amp;k &amp; l &amp; m \\ \end{array}     &amp;     \begin{array}{|rrrr|rrrr}           &amp;    &amp;    &amp;    &amp; qj &amp;  &amp;  &amp;  \\          &amp;    &amp;    &amp; pj &amp; pk &amp; qk &amp;  &amp;  \\          &amp;    &amp; oj &amp; ok &amp; ol &amp; pl &amp; ql &amp;  \\          &amp; nj &amp; nk &amp; nl &amp; nm &amp; om &amp; pm &amp; qm \\         a &amp; b &amp; c &amp; d &amp; e &amp; f &amp; g &amp; h \\         \hline           a &amp; o_0 &amp; p_0 &amp; q_0 &amp; r &amp;  s &amp; t &amp; u \\          n &amp; o &amp; p &amp; q &amp; &amp;  &amp;  &amp;  \\     \end{array} \end{array}\)</span></p></li>
+<li><p>The results below the horizontal bar would be interpreted with increasing degree from right to left beginning with degree zero for both the remainder and the result.</p></li>
+</ol>
+<p><span class="math">\(\dfrac{ax^7+bx^6+cx^5+dx^4+ex^3+fx^2+gx+h}{ix^4-jx^3-kx^2-lx-m}=nx^3+ox^2+px+q+\dfrac{rx^3+sx^2+tx+u}{ix^4-jx^3-kx^2-lx-m}\)</span></p>
+<h2 id="rational-root-theorem"><a href="#rational-root-theorem">Rational root theorem</a></h2>
+<p>The rational root theorem (or rational root test) states a constraint on rational solutions (or roots) of the polynomial equation</p>
+<p><span class="math">\(a_nx^n+a_{n-1}x^{n-1}+\cdots+a_0 = 0\)</span></p>
+<p>with integer coefficients.</p>
+<p>If <span class="math">\(a_0\)</span> and <span class="math">\(a_n\)</span> are nonzero, then each rational solution <span class="math">\(x\)</span>, when written as a fraction <span class="math">\(x = \frac{p}{q}\)</span> in lowest terms (i.e., the greatest common divisor of <span class="math">\(p\)</span> and <span class="math">\(q\)</span> is <span class="math">\(1\)</span>), satisfies</p>
+<ul>
+<li><p><span class="math">\(p\)</span> is an integer factor of the constant term <span class="math">\(a_0\)</span>, and</p></li>
+<li><p><span class="math">\(q\)</span> is an integer factor of the leading coefficient <span class="math">\(a_n\)</span>.</p></li>
+</ul>
+<h1 id="finding-roots-of-polynomials"><a href="#finding-roots-of-polynomials">Finding roots of polynomials</a></h1>
+<h2 id="ruffinis-rule"><a href="#ruffinis-rule">Ruffini’s rule</a></h2>
+<p>Ruffini’s rule is an efficient technique for dividing a polynomial by a binomial of the form <span class="math">\(x − r\)</span>. It is a special case of synthetic division when the divisor is a linear factor.</p>
+<p>For each method, we’ll be using <span class="math">\(f(x) = x^3 + 2x^2 -x-2=0\)</span>:</p>
+<p><strong>Method 1</strong></p>
+<p>The synthetic division method:</p>
+<pre><code>     |    +1    +2    -1     -2                      |    +1    +2    -1    -2
+     |                                               |
+  +1 |          +1    +3     +2                   -1 |          -1    -1    +2
+ ----|----------------------------               ----|---------------------------
+     |    +1    +3    +2      0                      |    +1    +1    -2     0
+
+
+     |    +1    +2    -1     -2                      |    +1    +2    -1    -2
+     |                                               |
+  +2 |          +2    +8    +14                   -2 |          -2     0    +2
+ ----|----------------------------               ----|---------------------------
+     |    +1    +4    +7    +12                      |    +1     0    -1     0</code></pre>
+<p><strong>Method 2</strong></p>
+<p>We start just as in Method 1 until we find a valid root. Then, instead of restarting the process with the other possible roots, we continue testing the possible roots against the result of the Ruffini on the valid root we’ve just found until we only have a coefficient remaining (remember that roots can be repeated: if you get stuck, try each valid root twice):</p>
+<pre><code>     |    +1    +2    -1    -2                      |    +1    +2    -1    -2
+     |                                              |
+  -1 |          -1    -1    +2                   -1 |          -1    -1    +2
+ ----|---------------------------               ----|---------------------------
+     |    +1    +1    -2   | 0                      |    +1    +1    -2   | 0
+     |                                              |
+  +2 |          +2    +6                         +1 |          +1    +2
+ -------------------------                      -------------------------
+     |    +1    +3   |+4                            |    +1    +2   | 0
+                                                    |
+                                                 -2 |          -2
+                                                -------------------
+                                                    |    +1   | 0</code></pre>
+<h1 id="factorial"><a href="#factorial">Factorial</a></h1>
+<p>The factorial of a non-negative integer <span class="math">\(n\)</span>, denoted by <span class="math">\(n!\)</span>, is the product of all positive integers less than or equal to <span class="math">\(n\)</span>.</p>
+<p>The factorial function is formally defined by:</p>
+<p><span class="math">\[n!=\prod_{k=1}^n k \!\]</span></p>
+<p>or recursively defined by:</p>
+<p><span class="math">\[n! = \begin{cases}
+1 &amp; \text{if } n = 0, \\
+(n-1)!\times n &amp; \text{if } n &gt; 0.
+\end{cases}\]</span></p>
+<p>Both of the above definitions incorporate the instance <span class="math">\(0! = 1\)</span>, in the first case by the convention that the product of no numbers at all is 1. This is convenient because there is exactly one permutation of zero objects (with nothing to permute, “everything” is left in place).</p>
+<h1 id="combination"><a href="#combination">Combination</a></h1>
+<p>A combination is a way of selecting several things out of a larger group, where order does not matter. For instance, <span class="math">\({n \choose k}\)</span> can be interpreted as the number of ways to choose <span class="math">\(k\)</span> elements from an <span class="math">\(n\)</span>-element set. This is pronounced as “<span class="math">\(n\)</span> choose <span class="math">\(k\)</span>”.</p>
+<p><span class="math">\[{n \choose k} = \dfrac{n!}{k!(n-k)!}\]</span></p>
+<h1 id="permutation"><a href="#permutation">Permutation</a></h1>
+<p>The notion of permutation is used with several slightly different meanings, all related to the act of permuting (rearranging) objects or values. Informally, a permutation of a set of objects is an arrangement of those objects into a particular order.</p>
+<p>The number of permutations of <span class="math">\(n\)</span> distinct objects is <span class="math">\(n!\)</span></p>
+<p><span class="math">\[\dfrac{n!}{(n-k)!}\]</span></p>
+<h1 id="binomial-theorem"><a href="#binomial-theorem">Binomial theorem</a></h1>
+<p>The binomial theorem describes the algebraic expansion of powers of a binomial (a polynomial with two terms). According to the theorem, it is possible to expand the power <span class="math">\((x + y)^n\)</span> into a sum involving terms of the form <span class="math">\(ax^by^c\)</span>, where the exponents <span class="math">\(b\)</span> and <span class="math">\(c\)</span> are nonnegative integers with <span class="math">\(b + c = n\)</span>, and the coefficient <span class="math">\(a\)</span> of each term is a specific positive integer depending on <span class="math">\(n\)</span> and <span class="math">\(b\)</span>, or <span class="math">\(n\)</span> and <span class="math">\(c\)</span>.</p>
+<p>The coefficient <span class="math">\(a\)</span> in the term of <span class="math">\(x^by^c\)</span> is known as the binomial coefficient <span class="math">\({n \choose b}\)</span> or <span class="math">\({n \choose c}\)</span> (the two have the same value).</p>
+<p><strong>Note:</strong> The binomial coefficients appear as the entries of Pascal’s triangle.</p>
+<h2 id="statement-of-the-theorem"><a href="#statement-of-the-theorem">Statement of the theorem</a></h2>
+<p>According to the theorem, it is possible to expand any power of <span class="math">\(x + y\)</span> into a sum of the form</p>
+<p><span class="math">\[(x+y)^n = {n \choose 0}x^n y^0 + {n \choose 1}x^{n-1}y^1 + {n \choose 2}x^{n-2}y^2 + \cdots + {n \choose n-1}x^1 y^{n-1} + {n \choose n}x^0 y^n\]</span></p>
+<p>where each <span class="math">\(\tbinom nk\)</span> is a specific positive integer known as binomial coefficient. This formula is also referred to as the <strong>Binomial Formula</strong> or the <strong>Binomial Identity</strong>. Using summation notation, it can be written as</p>
+<p><span class="math">\[(x+y)^n = \sum_{k=0}^n {n \choose k}x^{n-k}y^k =  \sum_{k=0}^n {n \choose k}x^{k}y^{n-k}\]</span></p>
+<p>The final expression follows from the previous one by the symmetry of <span class="math">\(x\)</span> and <span class="math">\(y\)</span> in the first expression, and by comparison it follows that the sequence of binomial coefficients in the formula is symmetrical.</p>
+<h1 id="exponential-function"><a href="#exponential-function">Exponential function</a></h1>
+<p>Exponential growth occurs when the growth rate of the value of a mathematical function is proportional to the function’s current value.</p>
+<p><span class="math">\[x(t)=a\cdot b^{t/\tau}\]</span></p>
+<ol type="1">
+<li><span class="math">\(a\)</span> is the initial value of x (i.e. <span class="math">\(x(0)=a\)</span>)</li>
+<li><p><span class="math">\(b\)</span> is the growth factor</p></li>
+<li><p><span class="math">\(\tau\)</span> is the time constant (the time required for <span class="math">\(x\)</span> to increase by one factor of <span class="math">\(b\)</span>) <span class="math">\(x(t+\tau)=a \cdot b^{\frac{t+\tau}{\tau}} = a \cdot b^{\frac{t}{\tau}} \cdot b^{\frac{\tau}{\tau}} = x(t)\cdot b\)</span></p></li>
+</ol>
+<p><strong>Growth rate</strong></p>
+<ol type="1">
+<li>If <span class="math">\(\tau &gt; 0\)</span> and <span class="math">\(b &gt; 1\)</span>, then <span class="math">\(x\)</span> has exponential growth.</li>
+<li>If <span class="math">\(\tau &lt; 0\)</span> and <span class="math">\(0 &lt; b &lt; 1\)</span>, then <span class="math">\(x\)</span> has exponential growth (see 1).</li>
+<li>If <span class="math">\(\tau &lt; 0\)</span> and <span class="math">\(b &gt; 1\)</span>, then <span class="math">\(x\)</span> has exponential decay.</li>
+<li>If <span class="math">\(\tau &gt; 0\)</span> and <span class="math">\(0 &lt; b &lt; 1\)</span>, then <span class="math">\(x\)</span> has exponential decay.</li>
+</ol>
+<p><strong>Common forms</strong></p>
+<ol type="1">
+<li>The growth constant <span class="math">\(k\)</span> is the frequency (number of times per unit time) of growing by a factor b.</li>
+</ol>
+<p><span class="math">\[x(t) = x_0 \cdot b^{kt}\]</span></p>
+<ol start="2" type="1">
+<li>The <strong>e-folding time</strong> <span class="math">\(\tau\)</span> is the time it takes to grow by a factor b.</li>
+</ol>
+<p><span class="math">\[x(t)= x_0 \cdot b^{t/\tau}\]</span></p>
+<ol start="3" type="1">
+<li>The <strong>doubling time</strong> <span class="math">\(T\)</span> is the time it takes to double.</li>
+</ol>
+<p><span class="math">\[x(t)= x_0 \cdot 2^{t/T}\]</span></p>
+<ol start="4" type="1">
+<li>The <strong>percent increase</strong> <span class="math">\(r\)</span> (a dimensionless number) in a period <span class="math">\(p\)</span>.</li>
+</ol>
+<p><span class="math">\[x(t)= x_0 \cdot \left( 1 + \dfrac{r}{100} \right)^{t/p}\]</span></p>
+<h2 id="properties-1"><a href="#properties-1">Properties</a></h2>
+<ul>
+<li><p>Domain: <span class="math">\((-\infty, \infty)\)</span></p></li>
+<li><p>Range: <span class="math">\((0, \infty)\)</span></p></li>
+<li><p><span class="math">\((0,1)\)</span> is on the graph</p></li>
+<li><p><span class="math">\(y = 0\)</span> is the horizontal asymptote</p></li>
+<li><p><span class="math">\(f\)</span> is one-to-one, continuous, and smooth.</p></li>
+</ul>
+<p><strong>Note:</strong> Informally, smooth means the function has no sharp turns or corners. Formally, it means the function has derivatives of all orders.</p>
+<ol type="1">
+<li><p>If <span class="math">\(b &gt; 0\)</span>:</p>
+<ul>
+<li><p><span class="math">\(f\)</span> is always increasing</p></li>
+<li><p>As <span class="math">\(x \rightarrow -\infty, f(x) \rightarrow 0^+\)</span></p></li>
+<li><p>As <span class="math">\(x \rightarrow \infty, f(x) \rightarrow \infty\)</span></p></li>
+</ul></li>
+<li><p>If <span class="math">\(0 &lt; b &lt; 1\)</span>:</p>
+<ul>
+<li><p><span class="math">\(f\)</span> is always decreasing</p></li>
+<li><p>As <span class="math">\(x \rightarrow -\infty, f(x) \rightarrow \infty\)</span></p></li>
+<li><p>As <span class="math">\(x \rightarrow \infty, f(x) \rightarrow 0^+\)</span></p></li>
+</ul></li>
+</ol>
+<h1 id="logarithmic-function"><a href="#logarithmic-function">Logarithmic function</a></h1>
+<p>The logarithm of a number is the exponent to which another fixed value, the base, must be raised to produce that number.</p>
+<p>The logarithm is the inverse of the exponential function <span class="math">\(f(x) = b^x\)</span>: <span class="math">\(f^{-1}(x) = \log_b (x)\)</span></p>
+<p>If <span class="math">\(x = b^y\)</span>, then <span class="math">\(y\)</span> is the logarithm of <span class="math">\(x\)</span> to base <span class="math">\(b\)</span>.</p>
+<ul>
+<li><p>Common logarithm (<span class="math">\(\log (x)\)</span>) when <span class="math">\(b = 10\)</span>.</p></li>
+<li><p>Natural logarithm (<span class="math">\(\ln(x)\)</span>) when <span class="math">\(b = e\)</span>.</p></li>
+<li><p>Binary logarithm when <span class="math">\(b = 2\)</span> (prevalent in computer science).</p></li>
+</ul>
+<h2 id="properties-2"><a href="#properties-2">Properties</a></h2>
+<p>Suppose <span class="math">\(f(x) = log_b (x)\)</span></p>
+<ul>
+<li><p>Domain: <span class="math">\((0, \infty)\)</span></p></li>
+<li><p>Range: <span class="math">\((-\infty, \infty)\)</span></p></li>
+<li><p><span class="math">\((1,0)\)</span> is on the graph</p></li>
+<li><p><span class="math">\(x = 0\)</span> is the vertical asymptote</p></li>
+<li><p><span class="math">\(f\)</span> is one-to-one, continuous, and smooth.</p></li>
+<li><p><span class="math">\(b^a = c\)</span> if and only if <span class="math">\(\log_b(c) = a\)</span></p></li>
+<li><p><span class="math">\(\log_b(c) = \frac{\log(c)}{\log(b)}\)</span></p></li>
+<li><p><span class="math">\(\log_b (b^x) = x\)</span> for all <span class="math">\(x\)</span></p></li>
+<li><p><span class="math">\(b^{\log_b (x)}\)</span> for all <span class="math">\(x &gt;0\)</span></p></li>
+</ul>
+<ol type="1">
+<li><p>If <span class="math">\(b &gt; 0\)</span>:</p>
+<ul>
+<li><p><span class="math">\(f\)</span> is always increasing</p></li>
+<li><p>As <span class="math">\(x \rightarrow 0^+, f(x) \rightarrow -\infty\)</span></p></li>
+<li><p>As <span class="math">\(x \rightarrow \infty, f(x) \rightarrow \infty\)</span></p></li>
+</ul></li>
+<li><p>If <span class="math">\(0 &lt; b &lt; 1\)</span>:</p>
+<ul>
+<li><p><span class="math">\(f\)</span> is always decreasing</p></li>
+<li><p>As <span class="math">\(x \rightarrow 0^+, f(x) \rightarrow \infty\)</span></p></li>
+<li><p>As <span class="math">\(x \rightarrow \infty, f(x) \rightarrow -\infty\)</span></p></li>
+</ul></li>
+</ol>
+<h2 id="logarithmic-identities"><a href="#logarithmic-identities">Logarithmic identities</a></h2>
+<p>Suppose <span class="math">\(b\)</span>, <span class="math">\(y\)</span>, and <span class="math">\(y\)</span> are positive real numbers and <span class="math">\(b \neq 1\)</span>. Both <span class="math">\(c\)</span> and <span class="math">\(d\)</span> are real numbers where <span class="math">\(b^c = x\)</span> and <span class="math">\(b^d = y\)</span>.</p>
+<p><strong>Trivial identities</strong></p>
+<ol type="1">
+<li><p><span class="math">\(\log_b(1) = 0\)</span> because <span class="math">\(b^0 = 1\)</span></p></li>
+<li><p><span class="math">\(\log_b(b) = 1\)</span> because <span class="math">\(b^1 = b\)</span></p></li>
+</ol>
+<p><strong>Canceling exponentials</strong></p>
+<p>Logarithms and exponentials (antilogarithms) with the same base cancel each other. This is true because logarithms and exponentials are inverse operations (just like multiplication and division or addition and subtraction).</p>
+<ol type="1">
+<li><p><span class="math">\(b^{\log_b(x)} = x\text{ because }\operatorname{antilog}_b(\log_b(x)) = x\)</span></p></li>
+<li><p><span class="math">\(\log_b(b^x) = x\text{ because }\log_b(\operatorname{antilog}_b(x)) = x\)</span></p></li>
+</ol>
+<p>The laws (product, quotient, power and root) below result from canceling exponentials and appropriate law of indices.</p>
+<h3 id="product"><a href="#product">Product</a></h3>
+<p><span class="math">\(\log_b(x y) = \log_b (x) + \log_b (y)\)</span></p>
+<p>because</p>
+<p><span class="math">\(b^c \cdot b^d = b^{c + d}\)</span></p>
+<p><strong>Proof</strong></p>
+<p><span class="math">\(xy = b^{\log_b(x)} b^{\log_b(y)} = b^{\log_b(x) + \log_b(y)} \Rightarrow \log_b(xy) = \log_b(b^{\log_b(x) + \log_b(y)}) = \log_b(x) + \log_b(y)\)</span></p>
+<h3 id="quotient"><a href="#quotient">Quotient</a></h3>
+<p><span class="math">\(\log_b \!\left(\frac x y \right) = \log_b (x) - \log_b (y)\)</span></p>
+<p>because</p>
+<p><span class="math">\(b^{c-d} = \tfrac{b^c}{b^d} \)</span></p>
+<p><strong>Proof</strong></p>
+<p><span class="math">\(\log_b \bigg(\frac{x}{y}\bigg) = \log_b(x y^{-1}) = \log_b(x) + \log_b(y^{-1}) = \log_b(x) - \log_b(y)\)</span></p>
+<h3 id="power"><a href="#power">Power</a></h3>
+<p><span class="math">\(\log_b(x^p) = p \log_b (x)\)</span></p>
+<p>because</p>
+<p><span class="math">\((b^c)^d = b^{cd} \)</span></p>
+<p><strong>Proof</strong></p>
+<p><span class="math">\(x^y = (b^{\log_b(x)})^y = b^{y \log_b(x)} \Rightarrow \log_b(x^y) = y \log_b(x)\)</span></p>
+<h3 id="root"><a href="#root">Root</a></h3>
+<p>By extension of the power log rule:</p>
+<p><span class="math">\(\log_b \sqrt[p]{x} = \frac {\log_b (x)} p\)</span></p>
+<p>because</p>
+<p><span class="math">\(\sqrt[y]{x} = x^{1/y} \)</span></p>
+<p><strong>Proof</strong></p>
+<p><span class="math">\(\log_b(\sqrt[y]x) = \log_b(x^{\frac{1}{y}}) = \frac{1}{y}\log_b(x)\)</span></p>
+<h3 id="change-of-base"><a href="#change-of-base">Change of base</a></h3>
+<p>The logarithm <span class="math">\(\log_b(x)\)</span> can be computed from the logarithms of <span class="math">\(x\)</span> and <span class="math">\(b\)</span> with respect to an arbitrary base <span class="math">\(k\)</span> using the following formula:</p>
+<p><span class="math">\(\log_b a = {\log_d a \over \log_d b}\)</span></p>
+<p>This formula has several consequences:</p>
+<ul>
+<li><p><span class="math">\(\log_b a = \frac {1} {\log_a b}\)</span></p></li>
+<li><p><span class="math">\(\log_{b^n} a =  {{\log_b a} \over n}\)</span></p></li>
+<li><p><span class="math">\(b^{\log_a d} = d^{\log_a b}\)</span></p></li>
+<li><p><span class="math">\(\log_b a = \log_b \left({1 \over a}\right) = \log_{1 \over b} a\)</span></p></li>
+</ul>
+<p><strong>Proof</strong></p>
+<p>Let <span class="math">\(c=\log_b a\)</span>. Then <span class="math">\(b^c=a\)</span>.</p>
+<p>Take <span class="math">\(\log_d\)</span> on both sides: <span class="math">\(\log_d b^c=\log_d a\)</span></p>
+<p>Simplify and solve for <span class="math">\(c\)</span>: $ c<em>d b=</em>d a$</p>
+<p><span class="math">\(c=\frac{\log_d a}{\log_d b}\)</span></p>
+<p>Since <span class="math">\(c=\log_b a\)</span>, then <span class="math">\(\log_b a=\frac{\log_d a}{\log_d b}\)</span></p>
+<h3 id="switch"><a href="#switch">Switch</a></h3>
+<p><span class="math">\(x^{\log_b(y)} = y^{\log_b(x)}\)</span></p>
+<p>because</p>
+<p><span class="math">\(x^{\log_b(y)} = b^{\log_b(x) \log_b(y)} = b^{\log_b(y) \log_b(x)} = y^{\log_b(x)}\)</span></p>
+<h1 id="functions-1"><a href="#functions-1">Functions</a></h1>
+<p>SECTION ALREADY CREATED! MOVE THIS BEFORE COORDINATES SECTION!</p>
+<h2 id="inverse"><a href="#inverse">Inverse</a></h2>
+<h2 id="piecewise"><a href="#piecewise">Piecewise</a></h2>
+<pre><code>TODO: complete</code></pre>
+<h1 id="conic-sections"><a href="#conic-sections">Conic Sections</a></h1>
+<pre><code>TODO: complete</code></pre>
+<h1 id="systems-of-equations"><a href="#systems-of-equations">Systems of equations</a></h1>
+<pre><code>TODO: complete</code></pre>
+<h1 id="partial-fraction"><a href="#partial-fraction">Partial fraction</a></h1>
+<p>The partial fraction decomposition or partial fraction expansion is a procedure used to reduce the degree of either the numerator or the denominator of a rational function.</p>
+<p>In order to resolve an algebraic expression into partial fractions:</p>
+<ol type="1">
+<li>the denominator must factorize</li>
+<li>the numerator must be at least one degree less than the denominator</li>
+</ol>
+<p><strong>Example:</strong></p>
+<p><span class="math">\(\dfrac{4x-5}{x^2-x-2} = \dfrac{(x+1) +3(x-2)}{(x-2)(x+1)} = \dfrac{1}{x-2} + \dfrac{3}{x+1}\)</span></p>
+<p>When the degree of the numerator is equal to or higher than the degree of the denominator, the numerator must be divided by the denominator until the remainder is of less degree than the denominator.</p>
+<pre><code>TODO: complete  </code></pre>
+<h1 id="sequences"><a href="#sequences">Sequences</a></h1>
+<h2 id="definition-and-properties"><a href="#definition-and-properties">Definition and properties</a></h2>
+<pre><code>TODO: complete</code></pre>
+<h2 id="recursive-sequences"><a href="#recursive-sequences">Recursive sequences</a></h2>
+<pre><code>TODO: complete</code></pre>
+<h2 id="arithmetic"><a href="#arithmetic">Arithmetic</a></h2>
+<h2 id="geoemtric"><a href="#geoemtric">Geoemtric</a></h2>
+<h1 id="series"><a href="#series">Series</a></h1>
+
+<script type="text/x-mathjax-config"> 
+
+// based on http://jsfiddle.net/keithphw/Dwpbb/13/
+
+MathJax.Hub.Config({   tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+skipStartupTypeset: true,
+lazytex2jax: {displayMath: [['$$','$$'], ['\\[','\\]']],
+inlineMath: [['$','$'], ['\\(','\\)']]
+},
+
+ }); 
+</script>
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
+</script>
+      <script src="js/object-watch.js"></script>
+
+      <script src="js/require.js"></script>
+      <script>
+      requirejs.config({
+      baseUrl: "js"
+      });
+      </script>
+
+      <script src="./js/lazyload.js"></script>
+</body>
+</html>

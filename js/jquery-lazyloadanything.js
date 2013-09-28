@@ -55,6 +55,7 @@ define(["jquery"], // Require jquery
 		
 				// Set the timeout for onLoad
 				timeout = setTimeout(function() {
+
 				
 					/*
 					x1, y1 o----------------------o x2, y1

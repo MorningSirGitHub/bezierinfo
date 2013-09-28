@@ -3353,13 +3353,24 @@ function drawCurve(points[], t):
       <script src="colorpreprocess.js"></script>
 
       <!-- MathJax for beautiful LaTeX functions -->
+
+      <script src="js/require.js"></script>
+      <script src="js/object-watch.js"></script>
+      <script>
+      requirejs.config({
+      baseUrl: "js"
+      });
+      </script>
+
       <script type="text/x-mathjax-config">
         MathJax.Hub.Config({
           displayAlign: "left",
           displayIndent: "2em",
           TeX: {
             extensions: ["color.js"]
-          }
+          },
+          skipStartupTypeset: true,
+          lazytex2jax: {displayMath: [['$$','$$'], ['\\[','\\]']]},
         });
       </script>
       <script>(function(){
@@ -3369,6 +3380,9 @@ function drawCurve(points[], t):
           document.head.appendChild(script);
         }
       }());</script>
+      <script src="./js/lazyload.js"></script>
+
+
 
       <!--
       <script src="webcomponents/web-components.js"></script>
@@ -3378,7 +3392,7 @@ function drawCurve(points[], t):
       <!--
         no tracking info: http://support.addthis.com/customer/portal/articles/1013558-removing-all-hashtags-anchors-from-your-urls
       -->
-      ​<script type="text/javascript">
+      ​<!--<script type="text/javascript">
         var addthis_config = addthis_config||{};
         addthis_config.data_track_clickback = false;
         addthis_config.data_track_addressbar = false;
@@ -3402,7 +3416,7 @@ function drawCurve(points[], t):
             } catch(e) { console.log("could not connect to EPC"); }}
           document.addEventListener("DOMContentLoaded", addEasyPageComments, false);
         }
-      </script>
+      </script>-->
     </div>
   </body>
 </html>

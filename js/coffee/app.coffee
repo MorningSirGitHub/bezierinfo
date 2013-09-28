@@ -67,7 +67,7 @@ define (require) ->
       get_this = @
       $ ->
         getTextNodesIn = (el) ->
-          $(el).find(":not(iframe)").addBack().contents().filter ->
+          $(el).find(":not(iframe,script)").addBack().contents().filter ->
             @nodeType is 3
 
         #console.log $(getTextNodesIn('body')).size() + " text nodes"

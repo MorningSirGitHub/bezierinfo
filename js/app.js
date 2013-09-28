@@ -61,7 +61,7 @@ define(function(require) {
       return $(function() {
         var getTextNodesIn, lazy_watch_queue;
         getTextNodesIn = function(el) {
-          return $(el).find(":not(iframe)").addBack().contents().filter(function() {
+          return $(el).find(":not(iframe,script)").addBack().contents().filter(function() {
             return this.nodeType === 3;
           });
         };

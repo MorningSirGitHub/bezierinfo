@@ -96,7 +96,7 @@ define(function(require) {
       });
     };
 
-    _LazyLoad.prototype.isElementInViewport = function(el) {
+    _LazyLoad.prototype.isElementInViewport_old = function(el) {
       var height, left, top, width;
       top = el.offsetTop;
       left = el.offsetLeft;
@@ -108,6 +108,12 @@ define(function(require) {
         left += el.offsetLeft;
       }
       return top >= this.global.pageYOffset && left >= this.global.pageXOffset && (top + height) <= (this.global.pageYOffset + this.global.innerHeight) && (left + width) <= (this.global.pageXOffset + this.global.innerWidth);
+    };
+
+    _LazyLoad.prototype.isElementInViewport = function(el) {
+      var rect;
+      rect = el.getBoundingClientRect();
+      return rect.top >= 0 && rect.left >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && rect.right <= (window.innerWidth || document.documentElement.clientWidth);
     };
 
     _LazyLoad.prototype.watch_setup = function(lazy_watch_queue) {

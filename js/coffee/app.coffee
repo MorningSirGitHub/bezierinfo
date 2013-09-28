@@ -115,7 +115,7 @@ define (require) ->
 
         return
 
-    isElementInViewport: (el) ->
+    isElementInViewport_old: (el) ->
       top = el.offsetTop
       left = el.offsetLeft
       width = el.offsetWidth
@@ -125,6 +125,10 @@ define (require) ->
         top += el.offsetTop
         left += el.offsetLeft
       top >= @global.pageYOffset and left >= @global.pageXOffset and (top + height) <= (@global.pageYOffset + @global.innerHeight) and (left + width) <= (@global.pageXOffset + @global.innerWidth)
+    
+    isElementInViewport: (el) ->
+      rect = el.getBoundingClientRect()
+      return rect.top >= 0 and rect.left >= 0 and rect.bottom <= (window.innerHeight or document.documentElement.clientHeight) and rect.right <= (window.innerWidth or document.documentElement.clientWidth)
 
     watch_setup: (lazy_watch_queue)->
       $ = require('jquery')

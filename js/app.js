@@ -9,8 +9,9 @@ define(function(require) {
     function _LazyLoad(_global) {
       var get_this;
       this.isScrolling = false;
+      this.global = _global;
       get_this = this;
-      $(window).scroll(function() {
+      $(_global).scroll(function() {
         get_this.isScrolling = true;
         clearTimeout($.data(this, "scrollTimer"));
         return $.data(this, "scrollTimer", setTimeout(function() {
@@ -75,8 +76,9 @@ define(function(require) {
             regex_string = start_delimiter + '(.*?)' + end_delimiter;
             re = new XRegExp.cache(regex_string, "sg");
             return $(getTextNodesIn('body')).each(function() {
-              var lazy_element, name, new_text, replacementpattern, text;
-              text = $(this).text();
+              var a, lazy_element, name, new_text, replacementpattern, text;
+              a = $(this);
+              text = a.text();
               if (re.test(text)) {
                 lazy_element = {};
                 lazy_element.start_delimiter = delimiter[0];
@@ -85,7 +87,7 @@ define(function(require) {
                 lazy_watch_queue[name] = lazy_element;
                 replacementpattern = "<lazymathjax name=\"lazy-load-mathjax-stamp-" + name + "\">$1</lazymathjax>";
                 new_text = XRegExp.replace(text, re, replacementpattern);
-                return $(this).replaceWith(new_text);
+                return a.replaceWith(new_text);
               }
             });
           });
@@ -105,7 +107,7 @@ define(function(require) {
         top += el.offsetTop;
         left += el.offsetLeft;
       }
-      return top >= window.pageYOffset && left >= window.pageXOffset && (top + height) <= (window.pageYOffset + window.innerHeight) && (left + width) <= (window.pageXOffset + window.innerWidth);
+      return top >= this.global.pageYOffset && left >= this.global.pageXOffset && (top + height) <= (this.global.pageYOffset + this.global.innerHeight) && (left + width) <= (this.global.pageXOffset + this.global.innerWidth);
     };
 
     _LazyLoad.prototype.watch_setup = function(lazy_watch_queue) {

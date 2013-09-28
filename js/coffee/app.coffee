@@ -8,9 +8,9 @@ define (require) ->
     constructor: (_global) ->
 
       @isScrolling = false
-
+      @global = _global
       get_this = @
-      $(window).scroll ->
+      $(_global).scroll ->
         get_this.isScrolling = true
 
           
@@ -92,7 +92,8 @@ define (require) ->
 
 
             $(getTextNodesIn('body')).each(()->
-              text = $(this).text()
+              a = $(this)
+              text = a.text()
               if re.test(text)
 
                 lazy_element = {}
@@ -105,7 +106,7 @@ define (require) ->
                 replacementpattern = "<lazymathjax name=\"lazy-load-mathjax-stamp-#{name}\">$1</lazymathjax>"
                 new_text = XRegExp.replace(text, re, replacementpattern)
 
-                $(this).replaceWith(new_text)
+                a.replaceWith(new_text)
               )
             )
           )
@@ -123,7 +124,7 @@ define (require) ->
         el = el.offsetParent
         top += el.offsetTop
         left += el.offsetLeft
-      top >= window.pageYOffset and left >= window.pageXOffset and (top + height) <= (window.pageYOffset + window.innerHeight) and (left + width) <= (window.pageXOffset + window.innerWidth)
+      top >= @global.pageYOffset and left >= @global.pageXOffset and (top + height) <= (@global.pageYOffset + @global.innerHeight) and (left + width) <= (@global.pageXOffset + @global.innerWidth)
 
     watch_setup: (lazy_watch_queue)->
       $ = require('jquery')

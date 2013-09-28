@@ -25,8 +25,12 @@ define(function(require) {
         return _defer(_MathJax, "Hub", function() {
           return _defer(_MathJax.Hub, "config", function() {
             return _defer(_MathJax.Hub.config, "lazytex2jax", function(lazytex2jax) {
-              get_this['lazytex2jax'] = lazytex2jax;
-              return get_this.bootstrap();
+              return _defer(_MathJax.Hub.config, "skipStartupTypeset", function(skipStartupTypeset) {
+                if (skipStartupTypeset) {
+                  get_this['lazytex2jax'] = lazytex2jax;
+                  return get_this.bootstrap();
+                }
+              });
             });
           });
         });

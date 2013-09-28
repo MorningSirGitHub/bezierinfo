@@ -39,8 +39,10 @@ define (require) ->
         _defer _MathJax, "Hub", ->
           _defer _MathJax.Hub, "config", ->
             _defer _MathJax.Hub.config, "lazytex2jax", (lazytex2jax)->
-              get_this['lazytex2jax'] = lazytex2jax
-              get_this.bootstrap()
+              _defer _MathJax.Hub.config, "skipStartupTypeset", (skipStartupTypeset)->
+                if skipStartupTypeset
+                  get_this['lazytex2jax'] = lazytex2jax
+                  get_this.bootstrap()
 
 
     defer: (parent_obj, waitfor, method)->
@@ -194,8 +196,10 @@ define (require) ->
 
 
           )
-
         $.fn.lazyloadanything('load')
+        # setTimeout(()->
+        #   $.fn.lazyloadanything('load')
+        # ,1000)
 
 
         # mathjax_input = $("<mathjax></mathjax>").html($(this).text())

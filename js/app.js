@@ -61,10 +61,11 @@ define(function(require) {
       return $(function() {
         var getTextNodesIn, lazy_watch_queue;
         getTextNodesIn = function(el) {
-          return $(el).find(":not(iframe,script)").addBack().contents().filter(function() {
+          return $(el).find(":not(iframe,script,img,canvas)").addBack().contents().filter(function() {
             return this.nodeType === 3;
           });
         };
+        console.log($(getTextNodesIn('body')).size() + " text nodes");
         lazy_watch_queue = {};
         _.each(get_this.lazytex2jax, function(delimiter_pack, delimiter_pack_name) {
           return _.each(delimiter_pack, function(delimiter, index) {

@@ -67,10 +67,10 @@ define (require) ->
       get_this = @
       $ ->
         getTextNodesIn = (el) ->
-          $(el).find(":not(iframe,script)").addBack().contents().filter ->
+          $(el).find(":not(iframe,script,img,canvas)").addBack().contents().filter ->
             @nodeType is 3
 
-        #console.log $(getTextNodesIn('body')).size() + " text nodes"
+        console.log $(getTextNodesIn('body')).size() + " text nodes"
 
         lazy_watch_queue = {}
 

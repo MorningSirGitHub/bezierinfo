@@ -7,7 +7,7 @@
     urlArgs: 'bust=' + (new Date()).getTime()
     paths:
       'jquery': 'jquery-1.10.2.min'
-      'underscore': 'underscore-min'
+      'lodash': 'lodash.compat.min'
       'xregexp': 'xregexp-all-min'
 
     shim:
@@ -15,7 +15,7 @@
       jquery:
         exports: '$'
 
-      underscore:
+      lodash:
         exports: '_'
 
       'jquery-lazyloadanything': 
@@ -26,7 +26,7 @@
         deps: ['jquery']
 
       "app":
-        deps: ['jquery', 'underscore', 'xregexp', 'jquery-lazyloadanything', 'isOnScreen']
+        deps: ['jquery', 'lodash', 'xregexp', 'jquery-lazyloadanything', 'isOnScreen']
         exports: "_LazyLoad"
 
 

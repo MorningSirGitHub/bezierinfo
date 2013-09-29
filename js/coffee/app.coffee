@@ -61,7 +61,7 @@ define (require) ->
 
 
     bootstrap: () ->
-      _ = require('underscore')
+      _ = require('lodash')
       $ = require('jquery')
       XRegExp = require('xregexp')
       get_this = @

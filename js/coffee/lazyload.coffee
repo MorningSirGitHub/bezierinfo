@@ -1,6 +1,6 @@
 
 
-((global) ->
+((window) ->
 
   requirejs.config
     #enforceDefine: true
@@ -9,6 +9,7 @@
       'jquery': 'jquery-1.10.2.min'
       'lodash': 'lodash.compat.min'
       'xregexp': 'xregexp-all-min'
+      'async': 'async'
 
     shim:
 
@@ -31,10 +32,8 @@
 
 
   require ["app"], (_LazyLoad)->
-      $ = require('jquery')
-      $ ->
-        _LazyLoad.get(global)
-      return
+    _LazyLoad.get(window)
+    return
   
 
   
@@ -43,8 +42,8 @@
   return
   # see: https://github.com/shichuan/javascript-patterns/blob/master/general-patterns/access-to-global-object.html
   #)(if typeof window is "undefined" then this else window)
-)(this or (1
-eval_
+)(window or (1
+eval
 )("this"))
 
 

@@ -152,7 +152,7 @@ define (require) ->
             #console.log "something happened and stopped!"
 
 
-          , 350)
+          , 500)
           )
 
         $(get_this.window).trigger('scroll.lmjx')
@@ -218,11 +218,11 @@ define (require) ->
         _args: [render_package]
       
       # Queue render work
+      _queue.push(work_package, (cancelled)->
+        #console.log "done!"
+        )
+      #if(_queue.length() <= 20)
 
-      if(_queue.length() <= 10)
-        _queue.push(work_package, (cancelled)->
-          #console.log "done!"
-          )
 
 
       return
@@ -243,6 +243,23 @@ define (require) ->
 
     # Credit: http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
     isElementInViewport: (el) ->
+      rect = el.getBoundingClientRect()
+      docEl = document.documentElement
+      vWidth = @window.innerWidth or docEl.clientWidth
+      vHeight = @window.innerHeight or docEl.clientHeight
+      efp = (x, y) ->
+        document.elementFromPoint x, y
+
+      contains = (if "contains" of el then "contains" else "compareDocumentPosition")
+      has = (if contains is "contains" then 1 else 0x10)
+      
+      # Return false if it's not in the viewport
+      return false  if rect.right < 0 or rect.bottom < 0 or rect.left > vWidth or rect.top > vHeight
+      
+      # Return true if any of its four corners are visible
+      (eap = efp(rect.left, rect.top)) is el or el[contains](eap) is has or (eap = efp(rect.right, rect.top)) is el or el[contains](eap) is has or (eap = efp(rect.right, rect.bottom)) is el or el[contains](eap) is has or (eap = efp(rect.left, rect.bottom)) is el or el[contains](eap) is has
+
+    isElementInViewport_old: (el) ->
       rect = el.getBoundingClientRect()
       return rect.top >= 0 and rect.left >= 0 and rect.bottom <= (@window.innerHeight or document.documentElement.clientHeight) and rect.right <= (@window.innerWidth or document.documentElement.clientWidth)
 

@@ -101,7 +101,7 @@ define(function(require) {
                 });
               }
             });
-          }, 350));
+          }, 500));
         });
         return $(get_this.window).trigger('scroll.lmjx');
       });
@@ -158,9 +158,7 @@ define(function(require) {
         _this: this,
         _args: [render_package]
       };
-      if (_queue.length() <= 10) {
-        _queue.push(work_package, function(cancelled) {});
-      }
+      _queue.push(work_package, function(cancelled) {});
     };
 
     _LazyLoad.prototype.watchproperty = function(parent_obj, property, callback) {
@@ -175,6 +173,23 @@ define(function(require) {
     };
 
     _LazyLoad.prototype.isElementInViewport = function(el) {
+      var contains, docEl, eap, efp, has, rect, vHeight, vWidth;
+      rect = el.getBoundingClientRect();
+      docEl = document.documentElement;
+      vWidth = this.window.innerWidth || docEl.clientWidth;
+      vHeight = this.window.innerHeight || docEl.clientHeight;
+      efp = function(x, y) {
+        return document.elementFromPoint(x, y);
+      };
+      contains = ("contains" in el ? "contains" : "compareDocumentPosition");
+      has = (contains === "contains" ? 1 : 0x10);
+      if (rect.right < 0 || rect.bottom < 0 || rect.left > vWidth || rect.top > vHeight) {
+        return false;
+      }
+      return (eap = efp(rect.left, rect.top)) === el || el[contains](eap) === has || (eap = efp(rect.right, rect.top)) === el || el[contains](eap) === has || (eap = efp(rect.right, rect.bottom)) === el || el[contains](eap) === has || (eap = efp(rect.left, rect.bottom)) === el || el[contains](eap) === has;
+    };
+
+    _LazyLoad.prototype.isElementInViewport_old = function(el) {
       var rect;
       rect = el.getBoundingClientRect();
       return rect.top >= 0 && rect.left >= 0 && rect.bottom <= (this.window.innerHeight || document.documentElement.clientHeight) && rect.right <= (this.window.innerWidth || document.documentElement.clientWidth);

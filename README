@@ -1,14 +1,3 @@
-This repository houses "A Primer on Bezier Curves",
-written using LaTeX formulae for the mathy bits, and
-Processing.js sketches for the interactive graphics.
-
-The article itself is (c) 2011-2013 to me, Mike "Pomax"
-Kamermans, but all the .pde source code is in the
-public domain. If you want to use it, for whatever
-purpose, go for it. Although if you make several
-million dollars thanks to this article, a donation is
-of course always appreciated =P
-
-Live site: http://pomax.github.io/bezierinfo
+You disabled issues, so I'm going to have to ask you to do this through a pull request: please _disable_ GH Pages on this fork. Forking the bezierinfo repo is perfectly fine, but rehosting it (even through gh-pages) is not.
 
 - Pomax
